@@ -1,0 +1,14 @@
+ <div class="filter-options">
+  <button ng-repeat="category in portfolio.categories" class="btn btn-clear" data-group="{{category.name}}">{{category.title}}</button>
+</div>    
+        
+<div id="grid" class="row-fluid works-grid">
+  <figure ng-repeat="work in portfolio.works" class="span3 picture-item" data-groups='{{work.groups}}'>
+    <a ng-href="/#/work/{{work.id}}">
+      <img src="{{work.image}}"/>
+      <figcaption class="picture-item__title desc">{{work.title}}</figcaption>
+    </a>
+  </figure>
+</div>
+
+<span post-render />

@@ -1,0 +1,25 @@
+<div class="navigation">
+    <a ng-if="prev" ng-href="/#/work/{{prev}}"><i class="fa fa-long-arrow-left"></i></a>
+    <a ng-if="next" ng-href="/#/work/{{next}}"><i class="fa fa-long-arrow-right"></i></a>
+</div>
+
+<div class="work">
+    <div class="row">
+        <div class="work-title col-md-6">
+            {{work.title}}
+        </div>
+        <div class="work-desc col-md-6">
+            {{work.description}}
+        </div>
+    </div>
+
+    <div class="work-items">
+        <div class="work-item" ng-repeat="item in work.attachments">
+            <img ng-if="item.image" src="{{item.image}}" />
+            <span ng-if="item.text">
+              {{item.text}}
+            </span>
+        </div>
+    </div>
+
+</div>
