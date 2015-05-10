@@ -2,15 +2,15 @@
 
 angular
 .module('mashaPortfolioAngularApp').
-factory('portfolio', function() {
-    var pl = 'http://placehold.it/500x500';
+factory('portfolio', ['$sce', function($sce) {
     var bigPl = 'http://placehold.it/1000x600';
 
     var VIDEO = 'video',
         MOBILE = 'mobile',
         WEB = 'web',
         ILLUSTRATION = 'illustration',
-        DATA_VIS = 'data visualization';
+        DATA_VIS = 'data visualization',
+        PHOTO = 'photo';
 
     var categories = [
         {
@@ -32,6 +32,9 @@ factory('portfolio', function() {
         }, {
             name: DATA_VIS,
             title: 'Data visualization'
+        }, {
+            name: PHOTO,
+            title: 'Photography'
         }
     ];
 
@@ -39,7 +42,7 @@ factory('portfolio', function() {
         title: 'race the bunny',
         id: 'race-the-bunny',
         image: 'images/thumbs/race.png',
-        groups: [WEB, MOBILE],
+        groups: [MOBILE],
         description: 'This is my thesis project for the Academy of Art University. It is a map-based mobile application. It helps people who are running late to get to their destination on time. Basically, the  user plays a simple game: racing with a bunny, that shows a required speed to get on time, for a carrot, which represents the user’s destination.',
         attachments: [
             {
@@ -52,7 +55,7 @@ factory('portfolio', function() {
                 image: 'images/bunny/last_screen.png'
             },
             {
-                view: 'views/subviews/rtb_embed.html'
+                html: $sce.trustAsHtml('<iframe class="marvel-proto" src="https://marvelapp.com/gehdhe?emb=1" width="443" height="933" allowTransparency="true" frameborder="0"></iframe>')
             }
         ]
     };
@@ -62,16 +65,10 @@ factory('portfolio', function() {
         id: 'chew-well',
         image: 'images/thumbs/chew.png',
         groups: [MOBILE],
-        description: 'Chew well is an application that helps to improve your health by slowly chewing food. You can set up a timer for each bite and get an alert when it is time for the next one.',
+        description: 'Chew well is an application that helps to improve your health by slowly chewing food. You can set up a timer for each bite and get an alert when it is time for the next one. <a href="https://itunes.apple.com/us/app/chew-well/id879994842?mt=8">DOWNLOAD IOS</a>',
         attachments: [
             {
-                image: bigPl
-            },
-            {
-                image: bigPl
-            },
-            {
-                image: bigPl
+                image: 'images/chew/chew_well.png'
             }
         ]
     };
@@ -80,17 +77,11 @@ factory('portfolio', function() {
         title: 'air hockey',
         id: 'air-hockey',
         image: 'images/thumbs/airhockey.png',
-        description: 'Air hockey is a mobile version of a game for all air hockey lovers. I worked as a designer on this weekend project. The design is clean and simple in a flat style. Enjoy!',
+        description: 'Air hockey is a mobile version of a game for all air hockey lovers. I worked as a designer on this weekend project. The design is clean and simple in a flat style. Enjoy! <a href="https://itunes.apple.com/us/app/flat-air-hockey/id879369254?mt=8">DOWNLOAD IOS</a> / <a href="https://play.google.com/store/apps/details?id=com.romani.airhockey">DOWNLOAD ANDROID</a>',
         groups: [MOBILE],
         attachments: [
             {
-                image: bigPl
-            },
-            {
-                image: bigPl
-            },
-            {
-                image: bigPl
+                image: 'images/airhockey/airhockey.png'
             }
         ]
     };
@@ -103,13 +94,7 @@ factory('portfolio', function() {
         groups: [DATA_VIS],
         attachments: [
             {
-                image: bigPl
-            },
-            {
-                image: bigPl
-            },
-            {
-                image: bigPl
+                image: 'images/viz/food.png'
             }
         ]
     };
@@ -122,13 +107,7 @@ factory('portfolio', function() {
         groups: [DATA_VIS],
         attachments: [
             {
-                image: bigPl
-            },
-            {
-                image: bigPl
-            },
-            {
-                image: bigPl
+                image: 'images/viz/music.png'
             }
         ]
     };
@@ -141,13 +120,7 @@ factory('portfolio', function() {
         groups: [WEB],
         attachments: [
             {
-                image: bigPl
-            },
-            {
-                image: bigPl
-            },
-            {
-                image: bigPl
+               image: 'images/hyper/hyperloop_big.png'
             }
         ]
     };
@@ -156,17 +129,11 @@ factory('portfolio', function() {
         title: '8-bit beard men',
         id: '8-bit-beard-men',
         image: 'images/thumbs/pixels.png',
-        description: 'Once I tried to create an illustration in 8-bit style I become obsessed. It was a fun project for me to create beard men in different clothing. You can find here superheroes and characters from daily life. Click here to see the instagram of this project.',
+        description: 'Once I tried to create an illustration in 8bit style I become obsessed. It was a fun project for me to create beard men in different clothing. You can find here superheroes and characters from daily life. Click <a href="https://instagram.com/pixelmarvla/">here</a> to see the instagram of this project.',
         groups: [ILLUSTRATION],
         attachments: [
             {
-                image: bigPl
-            },
-            {
-                image: bigPl
-            },
-            {
-                image: bigPl
+                image: 'images/pixel/pixel.jpg'
             }
         ]
     };
@@ -175,17 +142,38 @@ factory('portfolio', function() {
         title: 'origami illustrations',
         id: 'origami-illustrations',
         image: 'images/thumbs/origami.png',
-        description: 'Here is an instagram account for this origami project. I am trying to keep it updated and add a new illustration at least once a week.',
+        description: $sce.trustAsHtml('Here is an <a href="https://instagram.com/origamimarvla/">instagram account</a> for this origami project. I am trying to keep it updated and add a new illustration at least once a week.'),
         groups: [ILLUSTRATION],
         attachments: [
             {
-                image: bigPl
+                image: 'images/origami/apple.png'
             },
             {
-                image: bigPl
+                image: 'images/origami/bird.jpg'
             },
             {
-                image: bigPl
+                image: 'images/origami/foldable_letter.jpg'
+            },
+            {
+                image: 'images/origami/mouse.jpg'
+            },
+            {
+                image: 'images/origami/penguin.jpg'
+            },
+            {
+                image: 'images/origami/rabbbit.png'
+            },
+            {
+                image: 'images/origami/rabbit.jpg'
+            },
+            {
+                image: 'images/origami/ship.jpg'
+            },
+            {
+                image: 'images/origami/swan.jpg'
+            },
+            {
+                image: 'images/origami/umbrella.jpg'
             }
         ]
     };
@@ -193,26 +181,32 @@ factory('portfolio', function() {
     var videos = {
         title: 'videos',
         id: 'videos',
-        image: "images/thumbs/video.png",
-        description: 'Here are some videos from my internship at mixbit.com and videos that I created for fun.',
+        image: 'images/thumbs/video.png',
+        description: $sce.trustAsHtml('Here are some videos from my internship at mixbit.com and videos that I created for fun. If you would like to see more works that I did at mixbit.com, please check it <a href="https://www.youtube.com/playlist?list=PLNexlchFah07BdQQHOgoFJ2-uX0CFkKxG">here</a>'),
         groups: [VIDEO],
         attachments: [
             {
-                image: bigPl
+                html: $sce.trustAsHtml('<iframe src="https://player.vimeo.com/video/116809195" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>')
             },
             {
-                image: bigPl
+                html: $sce.trustAsHtml('<iframe src="https://player.vimeo.com/video/116808992" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>')
             },
             {
-                image: bigPl
+                html: $sce.trustAsHtml('<iframe src="https://player.vimeo.com/video/116804000" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>')
+            },
+            {
+                html: $sce.trustAsHtml('<iframe src="https://player.vimeo.com/video/67361831" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>')
+            },
+            {
+                html: $sce.trustAsHtml('<iframe src="https://player.vimeo.com/video/63626739" width="500" height="367" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>')
             }
         ]
     };
 
     var weather = {
-        title: 'Weather',
+        title: 'weather',
         id: 'weather',
-        image: "images/thumbs/weather.png",
+        image: 'images/thumbs/weather.png',
         description: 'The problem is that sometimes when you see the numbers, you can not actually understand how you need to dress up. The idea of the responsive website is to show not only actual information but also a character that would wear some suggested clothing for that kind of weather (layer, rain coat, umbrella etc). The goal is to create a user-friendly interface and useful suggestions for the user.',
         groups: [WEB],
         attachments: [
@@ -226,7 +220,45 @@ factory('portfolio', function() {
                 image: bigPl
             }
         ]
-    }
+    };
+
+    var photo = {
+        title: 'photography',
+        id: 'photo',
+        image: 'images/thumbs/photo.png',
+        description: 'Here are my photos from different places around the world in the photo miniature style.',
+        groups: [PHOTO],
+        attachments: [
+            {
+                image: 'images/photos/alaska.jpg'
+            },
+            {
+                image: 'images/photos/sun.jpg'
+            },
+            {
+                image: 'images/photos/tilt2.jpg'
+            },
+            {
+                image: 'images/photos/tilt_shift.jpg'
+            },
+            {
+                image: 'images/photos/shift.jpg'
+            }
+        ]
+    };
+
+    var eggTimer = {
+        title: 'egg timer',
+        id: 'egg-timer',
+        image: 'images/thumbs/egg5.png',
+        description: 'Here’s a concept of a simple mobile app - egg timer. It’s easy and fun to use.',
+        groups: [MOBILE],
+        attachments: [
+            {
+                image: 'images/eggs/eggs.png'
+            }
+        ]
+    };
 
     var works = [
         raceTheBunny, 
@@ -238,9 +270,9 @@ factory('portfolio', function() {
         origami,
         videos,
         hyperLoop,
-        // fireMan,
-        // ballet,
-        weather
+        weather,
+        photo,
+        eggTimer
     ];
 
     function findPos(id) {
@@ -291,4 +323,4 @@ factory('portfolio', function() {
     getPrev: getPrev
   };
   return portfolioPieces;
-});
+}]);
