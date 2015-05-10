@@ -38,7 +38,7 @@ factory('portfolio', function() {
     var raceTheBunny = {
         title: 'race the bunny',
         id: 'race-the-bunny',
-        image: 'images/thumbs/bunny.png',
+        image: 'images/thumbs/race.png',
         groups: [WEB, MOBILE],
         description: 'This is my thesis project for the Academy of Art University. It is a map-based mobile application. It helps people who are running late to get to their destination on time. Basically, the  user plays a simple game: racing with a bunny, that shows a required speed to get on time, for a carrot, which represents the user’s destination.',
         attachments: [
@@ -133,7 +133,7 @@ factory('portfolio', function() {
     var hyperLoop = {
         title: 'hyper loop',
         id: 'hyper-loop',
-        image: 'images/thumbs/hyper.png',
+        image: 'images/thumbs/hyperloop.png',
         description: 'It\'s a concept for a hyperloop website. The source of information is this blog (http://www.teslamotors.com/sites/default/files/blog_attachments/hyperloop_alpha3.pdf)',
         groups: [WEB],
         attachments: [
@@ -152,7 +152,7 @@ factory('portfolio', function() {
     var beardMen = {
         title: '8-bit beard men',
         id: '8-bit-beard-men',
-        image: 'images/thumbs/beards.png',
+        image: 'images/thumbs/pixels.png',
         description: 'Once I tried to create an illustration in 8-bit style I become obsessed. It was a fun project for me to create beard men in different clothing. You can find here superheroes and characters from daily life. Click here to see the instagram of this project.',
         groups: [ILLUSTRATION],
         attachments: [
@@ -190,7 +190,7 @@ factory('portfolio', function() {
     var videos = {
         title: 'videos',
         id: 'videos',
-        image: pl,
+        image: "images/thumbs/video.png",
         description: 'Here are some videos from my internship at mixbit.com and videos that I created for fun.',
         groups: [VIDEO],
         attachments: [
@@ -245,7 +245,7 @@ factory('portfolio', function() {
     var weather = {
         title: 'Weather',
         id: 'weather',
-        image: pl,
+        image: "images/thumbs/weather.png",
         description: 'The problem is that sometimes when you see the numbers, you can not actually understand how you need to dress up. The idea of the responsive website is to show not only actual information but also a character that would wear some suggested clothing for that kind of weather (layer, rain coat, umbrella etc). The goal is to create a user-friendly interface and useful suggestions for the user.',
         groups: [WEB],
         attachments: [
