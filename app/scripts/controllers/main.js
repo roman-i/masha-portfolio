@@ -1,5 +1,7 @@
 'use strict';
 
+/*global $ */
+
 /**
  * @ngdoc function
  * @name mashaPortfolioAngularApp.controller:MainCtrl
@@ -21,8 +23,8 @@ angular.module('mashaPortfolioAngularApp')
             sizer: $sizer
           });
 
-          $(".filter-options button").click(function() {
-            var grp = $(this).data("group");
+          $('.filter-options button').click(function() {
+            var grp = $(this).data('group');
             $grid.shuffle('shuffle', grp);
           }); 
     };
@@ -32,7 +34,7 @@ var def = {
     restrict : 'A', 
     terminal : true,
     transclude : true,
-    link : function(scope, element, attrs) {
+    link : function(scope) {
         $timeout(scope.onRender, 0);  //Calling a scoped method
     }
 };

@@ -37,18 +37,18 @@ factory('portfolio', function() {
     var raceTheBunny = {
         title: 'race the bunny',
         id: 'race-the-bunny',
-        image: "images/thumbs/bunny.png",
+        image: 'images/thumbs/bunny.png',
         groups: [WEB, MOBILE],
-        description: "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?",
+        description: 'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?',
         attachments: [
             {
-                image: "images/bunny/screens.png"
+                image: 'images/bunny/screens.png'
             },
             {
-                image: "images/bunny/race_the_bunny.png"
+                image: 'images/bunny/race_the_bunny.png'
             },
             {
-                image: "images/bunny/last_screen.png"
+                image: 'images/bunny/last_screen.png'
             }
         ]
     };
@@ -56,49 +56,49 @@ factory('portfolio', function() {
     var chewWell = {
         title: 'chew well',
         id: 'chew-well',
-        image: "images/thumbs/chew.png",
+        image: 'images/thumbs/chew.png',
         groups: [MOBILE]
     };
 
     var airHockey = {
         title: 'air hockey',
         id: 'air-hockey',
-        image: "images/thumbs/airhockey.png",
+        image: 'images/thumbs/airhockey.png',
         groups: [MOBILE]
     };
 
     var foodVis = {
         title: 'food visualization',
         id: 'food-visualization',
-        image: "images/thumbs/food.png",
+        image: 'images/thumbs/food.png',
         groups: [DATA_VIS]
     };
 
     var musicVis = {
         title: 'music visualization',
         id: 'music-visualization',
-        image: "images/thumbs/music.png",
+        image: 'images/thumbs/music.png',
         groups: [DATA_VIS]
     };
 
     var hyperLoop = {
         title: 'hyper loop',
         id: 'hyper-loop',
-        image: "images/thumbs/hyper.png",
+        image: 'images/thumbs/hyper.png',
         groups: [WEB]
     };
 
     var beardMen = {
         title: '8-bit beard men',
         id: '8-bit-beard-men',
-        image: "images/thumbs/beards.png",
+        image: 'images/thumbs/beards.png',
         groups: [ILLUSTRATION]
     };
 
     var origami = {
         title: 'origami illustrations',
         id: 'origami-illustrations',
-        image: "images/thumbs/origami.png",
+        image: 'images/thumbs/origami.png',
         groups: [ILLUSTRATION]
     };
 
