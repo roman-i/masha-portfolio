@@ -19,6 +19,9 @@
             <span ng-if="item.text">
               {{item.text}}
             </span>
+            <span ng-if="item.view">
+              <ng-include src="item.view" />
+            </span>
         </div>
     </div>
 

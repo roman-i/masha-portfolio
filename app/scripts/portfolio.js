@@ -50,6 +50,9 @@ factory('portfolio', function() {
             },
             {
                 image: 'images/bunny/last_screen.png'
+            },
+            {
+                view: 'views/subviews/rtb_embed.html'
             }
         ]
     };
