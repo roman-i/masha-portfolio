@@ -5,7 +5,7 @@
 <div id="grid" class="row-fluid works-grid">
   <figure ng-repeat="work in portfolio.works" class="span3 picture-item" data-groups='{{work.groups}}'>
     <a ng-href="/#/work/{{work.id}}">
-      <img src="{{work.image}}"/>
+      <img ng-src="{{work.image}}"/>
       <figcaption class="picture-item__title desc">{{work.title}}</figcaption>
     </a>
   </figure>

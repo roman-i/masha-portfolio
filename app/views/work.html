@@ -15,7 +15,7 @@
 
     <div class="work-items">
         <div class="work-item" ng-repeat="item in work.attachments">
-            <img ng-if="item.image" src="{{item.image}}" />
+            <img ng-if="item.image" ng-src="{{item.image}}" />
             <span ng-if="item.text">
               {{item.text}}
             </span>
