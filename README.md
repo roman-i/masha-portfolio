@@ -1,12 +1,13 @@
 # masha-portfolio-angular
 
-This project is generated with [yo angular generator](https://github.com/yeoman/generator-angular)
-version 0.11.1.
 
 ## Build & development
 
-Run `grunt` for building and `grunt serve` for preview.
+`grunt serve` for preview / development, supports watching changes and reloading.
 
-## Testing
+`grunt` - builds production ready website in the `dist` folder.
+to run `dist` version - `grunt serve:dist`
 
-Running `grunt test` will run the unit tests with karma.
+
+This project is generated with [yo angular generator](https://github.com/yeoman/generator-angular)
+version 0.11.1.
