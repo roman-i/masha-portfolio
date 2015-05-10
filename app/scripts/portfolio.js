@@ -206,42 +206,6 @@ factory('portfolio', function() {
         ]
     };
 
-    // var fireMan = {
-    //     title: 'meet fireman video',
-    //     id: 'meet-fireman-video',
-    //     image: pl,
-    //     groups: [VIDEO],
-    //     attachments: [
-    //         {
-    //             image: bigPl
-    //         },
-    //         {
-    //             image: bigPl
-    //         },
-    //         {
-    //             image: bigPl
-    //         }
-    //     ]
-    // };
-
-    // var ballet = {
-    //     title: 'ballet video',
-    //     id: 'ballet-video',
-    //     image: pl,
-    //     groups: [VIDEO],
-    //     attachments: [
-    //         {
-    //             image: bigPl
-    //         },
-    //         {
-    //             image: bigPl
-    //         },
-    //         {
-    //             image: bigPl
-    //         }
-    //     ]
-    // };
-
     var weather = {
         title: 'Weather',
         id: 'weather',
