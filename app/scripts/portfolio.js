@@ -41,7 +41,7 @@ factory('portfolio', ['$sce', function($sce) {
         id: 'race-the-bunny',
         image: 'images/thumbs/race.png',
         groups: [MOBILE],
-        description: 'This is my thesis project for the Academy of Art University. It is a map-based mobile application. It helps people who are running late to get to their destination on time. Basically, the  user plays a simple game: racing with a bunny, that shows a required speed to get on time, for a carrot, which represents the user’s destination.',
+        description: 'This is my thesis project for the Academy of Art University. It is a map-based mobile application. It helps people who are running late to get to their destination on time. Basically, the  user plays a simple game: racing with a bunny, that shows a required speed to get on time, for a carrot, which represents the user’s destination. To get more information, please check <a href="http://rtb-promo.marvladimirovna.com/" target="new">this website</a>.',
         attachments: [
             {
                 image: 'images/bunny/race_the_bunny.png'
@@ -63,7 +63,7 @@ factory('portfolio', ['$sce', function($sce) {
         id: 'chew-well',
         image: 'images/thumbs/chew.png',
         groups: [MOBILE],
-        description: 'Chew well is an application that helps to improve your health by slowly chewing food. You can set up a timer for each bite and get an alert when it is time for the next one. <a href="https://itunes.apple.com/us/app/chew-well/id879994842?mt=8">download ios</a>',
+        description: 'Chew well is an application that helps to improve your health by slowly chewing food. You can set up a timer for each bite and get an alert when it is time for the next one. <a target="new" href="https://itunes.apple.com/us/app/chew-well/id879994842?mt=8">download ios</a>',
         attachments: [
             {
                 image: 'images/chew/chew_well.png'
@@ -75,7 +75,7 @@ factory('portfolio', ['$sce', function($sce) {
         title: 'air hockey',
         id: 'air-hockey',
         image: 'images/thumbs/airhockey.png',
-        description: 'Air hockey is a mobile version of a game for all air hockey lovers. I worked as a designer on this weekend project. The design is clean and simple in a flat style. Enjoy! <a href="https://itunes.apple.com/us/app/flat-air-hockey/id879369254?mt=8">download ios</a> / <a href="https://play.google.com/store/apps/details?id=com.romani.airhockey">download android</a>',
+        description: 'Air hockey is a mobile version of a game for all air hockey lovers. I worked as a designer on this weekend project. The design is clean and simple in a flat style. Enjoy! <a target="new" href="https://itunes.apple.com/us/app/flat-air-hockey/id879369254?mt=8">download ios</a> / <a target="new" href="https://play.google.com/store/apps/details?id=com.romani.airhockey">download android</a>',
         groups: [MOBILE],
         attachments: [
             {
@@ -101,7 +101,7 @@ factory('portfolio', ['$sce', function($sce) {
         title: 'music visualization',
         id: 'music-visualization',
         image: 'images/thumbs/music.png',
-        description: 'This data visualization shows my listening habits during winter 2014. I was collecting data about my music by using lastfm scrobbler, IFTTT.com and Echonext API. It is a website, so check it out <a href="http://infog.marvladimirovna.com/">here</a> (please be patient while it loads...)',
+        description: 'This data visualization shows my listening habits during winter 2014. I was collecting data about my music by using lastfm scrobbler, IFTTT.com and Echonext API. It is a website, so check it out <a target="new" href="http://infog.marvladimirovna.com/">here</a> (please be patient while it loads...)',
         groups: [DATA_VIS],
         attachments: [
             {
@@ -114,7 +114,7 @@ factory('portfolio', ['$sce', function($sce) {
         title: 'hyper loop',
         id: 'hyper-loop',
         image: 'images/thumbs/hyperloop.png',
-        description: 'It\'s a concept for a hyperloop website. The source of information is this <a href="http://www.teslamotors.com/sites/default/files/blog_attachments/hyperloop_alpha3.pdf">blog</a> and please check out the full version <a href="yukhimenko_hyperloop.pdf">here</a>',
+        description: 'It\'s a concept for a hyperloop website. The source of information is this <a target="new" href="http://www.teslamotors.com/sites/default/files/blog_attachments/hyperloop_alpha3.pdf">blog</a> and please check out the full version <a target="new" href="yukhimenko_hyperloop.pdf">here</a>',
         groups: [WEB],
         attachments: [
             {
@@ -127,7 +127,7 @@ factory('portfolio', ['$sce', function($sce) {
         title: '8-bit beard men',
         id: '8-bit-beard-men',
         image: 'images/thumbs/pixels.png',
-        description: 'Once I tried to create an illustration in 8bit style I become obsessed. It was a fun project for me to create beard men in different clothing. You can find here superheroes and characters from daily life. Click <a href="https://instagram.com/pixelmarvla/">here</a> to see the instagram of this project.',
+        description: 'Once I tried to create an illustration in 8bit style I become obsessed. It was a fun project for me to create beard men in different clothing. You can find here superheroes and characters from daily life. Click <a target="new" href="https://instagram.com/pixelmarvla/">here</a> to see the instagram of this project.',
         groups: [ILLUSTRATION],
         attachments: [
             {
@@ -140,7 +140,7 @@ factory('portfolio', ['$sce', function($sce) {
         title: 'origami illustrations',
         id: 'origami-illustrations',
         image: 'images/thumbs/origami.png',
-        description: $sce.trustAsHtml('Here is an <a href="https://instagram.com/origamimarvla/">instagram account</a> for this origami project. I am trying to keep it updated and add a new illustration at least once a week.'),
+        description: $sce.trustAsHtml('Here is an <a target="new" href="https://instagram.com/origamimarvla/">instagram account</a> for this origami project. I am trying to keep it updated and add a new illustration at least once a week.'),
         groups: [ILLUSTRATION],
         attachments: [
             {
@@ -180,7 +180,7 @@ factory('portfolio', ['$sce', function($sce) {
         title: 'videos',
         id: 'videos',
         image: 'images/thumbs/video.png',
-        description: $sce.trustAsHtml('Here are some videos from my internship at mixbit.com and videos that I created for fun. If you would like to see more works that I did at mixbit.com, please check it <a href="https://www.youtube.com/playlist?list=PLNexlchFah07BdQQHOgoFJ2-uX0CFkKxG">here</a>'),
+        description: $sce.trustAsHtml('Here are some videos from my internship at mixbit.com and videos that I created for fun. If you would like to see more works that I did at mixbit.com, please check it <a target="new" href="https://www.youtube.com/playlist?list=PLNexlchFah07BdQQHOgoFJ2-uX0CFkKxG">here</a>'),
         groups: [VIDEO],
         attachments: [
             {
