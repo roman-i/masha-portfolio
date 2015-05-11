@@ -3,8 +3,6 @@
 angular
 .module('mashaPortfolioAngularApp').
 factory('portfolio', ['$sce', function($sce) {
-    var bigPl = 'http://placehold.it/1000x600';
-
     var VIDEO = 'video',
         MOBILE = 'mobile',
         WEB = 'web',
@@ -46,13 +44,13 @@ factory('portfolio', ['$sce', function($sce) {
         description: 'This is my thesis project for the Academy of Art University. It is a map-based mobile application. It helps people who are running late to get to their destination on time. Basically, the  user plays a simple game: racing with a bunny, that shows a required speed to get on time, for a carrot, which represents the user’s destination.',
         attachments: [
             {
-                image: 'images/bunny/screens.png'
-            },
-            {
                 image: 'images/bunny/race_the_bunny.png'
             },
             {
-                image: 'images/bunny/last_screen.png'
+                image: 'images/bunny/screens.png'
+            },
+            {
+                image: 'images/race/last_screen.jpg'
             },
             {
                 html: $sce.trustAsHtml('<iframe class="marvel-proto" src="https://marvelapp.com/gehdhe?emb=1" width="443" height="933" allowTransparency="true" frameborder="0"></iframe>')
@@ -65,7 +63,7 @@ factory('portfolio', ['$sce', function($sce) {
         id: 'chew-well',
         image: 'images/thumbs/chew.png',
         groups: [MOBILE],
-        description: 'Chew well is an application that helps to improve your health by slowly chewing food. You can set up a timer for each bite and get an alert when it is time for the next one. <a href="https://itunes.apple.com/us/app/chew-well/id879994842?mt=8">DOWNLOAD IOS</a>',
+        description: 'Chew well is an application that helps to improve your health by slowly chewing food. You can set up a timer for each bite and get an alert when it is time for the next one. <a href="https://itunes.apple.com/us/app/chew-well/id879994842?mt=8">download ios</a>',
         attachments: [
             {
                 image: 'images/chew/chew_well.png'
@@ -77,7 +75,7 @@ factory('portfolio', ['$sce', function($sce) {
         title: 'air hockey',
         id: 'air-hockey',
         image: 'images/thumbs/airhockey.png',
-        description: 'Air hockey is a mobile version of a game for all air hockey lovers. I worked as a designer on this weekend project. The design is clean and simple in a flat style. Enjoy! <a href="https://itunes.apple.com/us/app/flat-air-hockey/id879369254?mt=8">DOWNLOAD IOS</a> / <a href="https://play.google.com/store/apps/details?id=com.romani.airhockey">DOWNLOAD ANDROID</a>',
+        description: 'Air hockey is a mobile version of a game for all air hockey lovers. I worked as a designer on this weekend project. The design is clean and simple in a flat style. Enjoy! <a href="https://itunes.apple.com/us/app/flat-air-hockey/id879369254?mt=8">download ios</a> / <a href="https://play.google.com/store/apps/details?id=com.romani.airhockey">download android</a>',
         groups: [MOBILE],
         attachments: [
             {
@@ -90,7 +88,7 @@ factory('portfolio', ['$sce', function($sce) {
         title: 'food visualization',
         id: 'food-visualization',
         image: 'images/thumbs/food.png',
-        description: 'This is a PNG version of a website where you can find out what kind of food I ate last fall. I collected the data over a couple months to see the pattern and then visualized. Click on an image to see more details.',
+        description: 'This is a PNG version of a website where you can find out what kind of food I ate last fall. I collected the data over a couple months to see the pattern and then visualized. Click <a href="info_big.png" target="new">here</a> to see more details.',
         groups: [DATA_VIS],
         attachments: [
             {
@@ -103,7 +101,7 @@ factory('portfolio', ['$sce', function($sce) {
         title: 'music visualization',
         id: 'music-visualization',
         image: 'images/thumbs/music.png',
-        description: 'This data visualization shows my listening habits during winter 2014. I was collecting data about my music by using lastfm scrobbler, IFTTT.com and Echonext API. It is a website, so check it out here (please be patient while it loads...)',
+        description: 'This data visualization shows my listening habits during winter 2014. I was collecting data about my music by using lastfm scrobbler, IFTTT.com and Echonext API. It is a website, so check it out <a href="http://infog.marvladimirovna.com/">here</a> (please be patient while it loads...)',
         groups: [DATA_VIS],
         attachments: [
             {
@@ -116,7 +114,7 @@ factory('portfolio', ['$sce', function($sce) {
         title: 'hyper loop',
         id: 'hyper-loop',
         image: 'images/thumbs/hyperloop.png',
-        description: 'It\'s a concept for a hyperloop website. The source of information is this blog (http://www.teslamotors.com/sites/default/files/blog_attachments/hyperloop_alpha3.pdf)',
+        description: 'It\'s a concept for a hyperloop website. The source of information is this <a href="http://www.teslamotors.com/sites/default/files/blog_attachments/hyperloop_alpha3.pdf">blog</a> and please check out the full version <a href="yukhimenko_hyperloop.pdf">here</a>',
         groups: [WEB],
         attachments: [
             {
@@ -133,7 +131,7 @@ factory('portfolio', ['$sce', function($sce) {
         groups: [ILLUSTRATION],
         attachments: [
             {
-                image: 'images/pixel/pixel.jpg'
+                image: 'images/pixel/pixel_big.png'
             }
         ]
     };
@@ -211,13 +209,7 @@ factory('portfolio', ['$sce', function($sce) {
         groups: [WEB],
         attachments: [
             {
-                image: bigPl
-            },
-            {
-                image: bigPl
-            },
-            {
-                image: bigPl
+                image: 'images/weather/weather.gif'
             }
         ]
     };
