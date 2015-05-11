@@ -209,7 +209,7 @@ factory('portfolio', ['$sce', function($sce) {
         groups: [WEB],
         attachments: [
             {
-                image: 'images/weather/weather.gif'
+                image: 'images/weather/weather_mobile.gif'
             }
         ]
     };
