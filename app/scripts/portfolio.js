@@ -46,11 +46,29 @@ factory('portfolio', ['$sce', function($sce) {
             {
                 image: 'images/bunny/race_the_bunny.png'
             },
+            // {
+            //     text: 'Paul Graham, a venture capitalist,  advises entrepreneurs to leave the sexy-sounding business ideas behind and instead build for their own needs: “‘instead of asking ‘what problem I solve ?’ ask ‘what problem do I wish someone else would solve for me?’” I wished somebody would solve a “being late” problem.'
+            // },
+            {
+                image: 'images/race/smart_watches.png'
+            },
             {
                 image: 'images/bunny/screens.png'
             },
             {
                 image: 'images/race/last_screen.jpg'
+            },
+            {
+                image: 'images/race/evolution.gif'
+            },
+            {
+                image: 'images/race/icons_3.png'
+            },
+            {
+                image: 'images/race/icons_2.png'
+            },
+            {
+                image: 'images/race/icons_1.png'
             },
             {
                 html: $sce.trustAsHtml('<iframe class="marvel-proto" src="https://marvelapp.com/gehdhe?emb=1" width="443" height="933" allowTransparency="true" frameborder="0"></iframe>')
@@ -202,7 +220,7 @@ factory('portfolio', ['$sce', function($sce) {
     };
 
     var weather = {
-        title: 'weather',
+        title: 'weather closet',
         id: 'weather',
         image: 'images/thumbs/weather.png',
         description: 'The problem is that sometimes when you see the numbers, you can not actually understand how you need to dress up. The idea of the responsive website is to show not only actual information but also a character that would wear some suggested clothing for that kind of weather (layer, rain coat, umbrella etc). The goal is to create a user-friendly interface and useful suggestions for the user.',
