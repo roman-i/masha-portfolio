@@ -165,7 +165,11 @@ $cellSize : 330px;
       a {
         color: #CCCCCC;
         font-variant: small-caps;
-        font-size: 18px;
+        font-size: 16px;
+        padding-top: 0px;
+        padding-bottom: 15px;
+        padding-left: 5px;
+        padding-right: 5px;
       }
     }
 
@@ -187,21 +191,49 @@ right:1%;
   background: 0;
   border: 0;
 
+  .navbar-collapse {
+    border: 0;
+    padding-right: 0px;
+  }
+
+  .navbar-toggle {
+    margin-top: 18px;
+    margin-bottom: 18px;
+    border: 0;
+    i {
+      font-size: 28px;
+    }
+    &:focus {
+      background: 0;
+    }
+  }
+
   .navbar-header {
     width: 100%;
     text-align: center;
     margin: 0;
+    margin-top: 20px;
+    position: relative;
+
+    .logo {
+      position: absolute;
+      top: 0px;
+      left: 50%;
+      margin-left: -75px;
+    }
   }
 }
 
 .logo {
-    margin-left: auto;
+  margin-left: auto;
   margin-right: auto;
   display: block;
   text-align: center;
 }
 
 .about-me {
+  margin-top: 20px;
+  margin-bottom: 20px;
   text-align: center;
   max-width: 500px;
     margin-left: auto;
@@ -226,6 +258,26 @@ a, a:hover {
 .download_resume, .marvel-proto {
   display: none;
 } 
+}
+
+@media (min-width: 768px) {
+  .social {
+    ul {
+      float: right;
+      margin-right: 20px;
+      a {
+        padding-top: 0;
+      }
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .social {
+    ul {
+      float: none;
+    }
+  }
 }
 
 .footer {

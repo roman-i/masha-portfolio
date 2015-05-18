@@ -41,7 +41,7 @@ factory('portfolio', ['$sce', function($sce) {
         id: 'race-the-bunny',
         image: 'images/thumbs/race.png',
         groups: [MOBILE],
-        description: 'This is my thesis project for the Academy of Art University. It is a map-based mobile application. It helps people who are running late to get to their destination on time. Basically, the  user plays a simple game: racing with a bunny, that shows a required speed to get on time, for a carrot, which represents the user’s destination. To get more information, please check <a href="http://rtb-promo.marvladimirovna.com/" target="new">this website</a>.',
+        description: 'This is my thesis project for the Academy of Art University. It is a map-based mobile application. It helps people who are running late to get to their destination on time. Basically, the  user plays a simple game: racing with a bunny, that shows a required speed to get on time, for a carrot, which represents the user’s destination.',
         attachments: [
             {
                 image: 'images/bunny/race_the_bunny.png'
@@ -59,7 +59,7 @@ factory('portfolio', ['$sce', function($sce) {
                 image: 'images/race/last_screen.jpg'
             },
             {
-                image: 'images/race/evolution.gif'
+                html: $sce.trustAsHtml('<img src="images/race/evolution.gif" style="max-width: 130px"/>')
             },
             {
                 image: 'images/race/icons_3.png'
@@ -132,7 +132,7 @@ factory('portfolio', ['$sce', function($sce) {
         title: 'hyper loop',
         id: 'hyper-loop',
         image: 'images/thumbs/hyperloop.png',
-        description: $sce.trustAsHtml('It\'s a concept of a website for Hyperloop, a train built on innovative transportation technology (http://www.teslamotors.com/blog/hyperloop). I created a web page advertising the Hyperloop to potential passengers. I kept responsiveness in mind: the design is easily translated to a mobile platform.'),
+        description: $sce.trustAsHtml('It\'s a concept of a website for Hyperloop, a train built on <a href="http://www.teslamotors.com/blog/hyperloop" target="_blank">innovative transportation technology</a>. I created a web page advertising the Hyperloop to potential passengers. I kept responsiveness in mind: the design is easily translated to a mobile platform. Please check this <a href="http://www.marvladimirovna.com/yukhimenko_hyperloop.pdf" target="_blank">high fidelity version</a>.'),
         groups: [WEB],
         attachments: [
             {
@@ -228,6 +228,9 @@ factory('portfolio', ['$sce', function($sce) {
         attachments: [
             {
                 image: 'images/weather/weather_mobile.gif'
+            },
+            {
+               image: 'images/weather/weather_screens.png'
             }
         ]
     };
@@ -265,7 +268,7 @@ factory('portfolio', ['$sce', function($sce) {
         groups: [MOBILE],
         attachments: [
             {
-                image: 'images/eggs/eggs.png'
+                html: $sce.trustAsHtml('<img src="images/eggs/egg.png" style="max-width: 70%" />')
             }
         ]
     };

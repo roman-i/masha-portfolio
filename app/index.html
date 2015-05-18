@@ -23,17 +23,22 @@
     <![endif]-->
 
     <!-- Add your site or application content here -->
-    <div class="header">
-      <div class="navbar navbar-default" role="navigation">
-        <div class="container">
-          <div class="navbar-header">
+    <div class="navbar navbar-default ">
 
-            <a href="index.html" class="logo">
-              <img src="images/logo2.png" width="150px" />   
-            </a>
 
-        <div class="social">
-            <ul>
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#social" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <i class="fa fa-bars"></i>
+          </button>
+          <a href="index.html" class="logo navbar-brand">
+            <img src="images/logo2.png" width="150px" />   
+          </a>
+        </div>
+
+
+          <div class="navbar-collapse collapse social" id="social">
+            <ul class="nav navbar-nav">
                 <li>
                     <a href="https://www.linkedin.com/in/mariyayukhimenko" target="new">
                         linkedin
@@ -58,18 +63,14 @@
         </div>
 
         <div class="about-me">
-        Hello, my name is Mariya Yukhimenko and I am a design grad student. I am focused on mobile, illustration and data visualization design.
+            Hello, my name is Mariya Yukhimenko and I am a design grad student. I am focused on mobile, illustration and data visualization design.
         </div>
 
 
-      </div>
 
-        </div>
-      </div>
-    </div>
 
     <div class="container">
-    <div ng-view=""></div>
+        <div ng-view=""></div>
     </div>
 
     <div class="footer">
@@ -80,7 +81,7 @@
 
       </div>
     </div>
-
+      </div>
 
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
      <script>
