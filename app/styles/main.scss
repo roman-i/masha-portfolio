@@ -163,9 +163,9 @@ $cellSize : 330px;
       margin-left: 3px;
 
       a {
-        color: #CCCCCC;
+        color: #CCCCCC ! important;
         font-variant: small-caps;
-        font-size: 16px;
+        font-size: 12px;
         padding-top: 0px;
         padding-bottom: 15px;
         padding-left: 5px;
@@ -240,9 +240,27 @@ right:1%;
   margin-right: auto;
 }
 
-.fa-long-arrow-right, .fa-long-arrow-left {
-  color: $grayColor;
+
+.navigation {
+  .fa-long-arrow-right, .fa-long-arrow-left {
+    color: $grayColor;
+  }
+  .prev, .next {
+    margin-left: 100px;
+  }
+
+  .close-icon {
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    background-image: url(../images/close_icon.png);
+    background-repeat: no-repeat;
+  }
+
 }
+
+
+
 
 
 .filter-options {
