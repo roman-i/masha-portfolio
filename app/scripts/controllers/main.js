@@ -10,47 +10,37 @@
  * Controller of the mashaPortfolioAngularApp
  */
 angular.module('mashaPortfolioAngularApp')
-  .controller('MainCtrl', ['$scope', '$timeout', 'portfolio', '$routeParams', '$location', '$route', function ($scope, $timeout, portfolio, $routeParams, $location, $route) {
+  .controller('MainCtrl', ['$scope', '$timeout', 'portfolio', '$routeParams', '$location', '$route', '$rootScope', function ($scope, $timeout, portfolio, $routeParams, $location, $route, $rootScope) {
 
-  
+    var $grid = $('#grid');  
 
     $scope.portfolio = portfolio;
 
-          var lastRoute = $route.current;
-          $scope.$on('$locationChangeSuccess', function(event) {
-              //alert('route changed');
-              var group = $route.current.params.groupId;
-              if (group) {
-                var $grid = $('#grid');
-                $grid.shuffle('shuffle', group);
-              }
-              $route.current = lastRoute;
-              
-              // $grid.shuffle('shuffle', grp);
-          });
+    function shuffleAndUpdateGroup() {
+        var group = $route.current.params.groupId || 'all';
+        $scope.group = group;
+        $grid.shuffle('shuffle', $scope.group);
+        $rootScope.lastGroup = group;
+    }
+
+    var lastRoute = $route.current;
+    $scope.$on('$locationChangeSuccess', function(event) {
+      if (lastRoute.$$route.controller === $route.current.$$route.controller) {
+
+        shuffleAndUpdateGroup();
+
+        $route.current = lastRoute;
+      }
+    });
 
     $scope.onRender = function() {
-        
-        var $grid = $('#grid'),
-                $sizer = $grid.find('.shuffle__sizer');
-          $grid.shuffle({
-              itemSelector: '.picture-item',
-              sizer: $sizer
-          });
+      var $sizer = $grid.find('.shuffle__sizer');
+      $grid.shuffle({
+          itemSelector: '.picture-item',
+          sizer: $sizer
+      });
 
-          //$state.transitionTo('search', {q: 'updated search term'}, { notify: false });
-
-          // $('.filter-options a').click(function() {
-          //   //var grp = $(this).data('group');
-          //   // $location.search('group', grp);
-          //   //$grid.shuffle('shuffle', grp);
-          //   return true;
-          // }); 
-
-          // if ($routeParams && $routeParams.categoryId) {
-          //   $grid.shuffle('shuffle', $routeParams.categoryId);
-          // }
-
+      shuffleAndUpdateGroup();
     };
   }])
 .directive('postRender', [ '$timeout', function($timeout) {

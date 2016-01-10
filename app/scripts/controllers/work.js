@@ -9,8 +9,8 @@
  */
 angular
 .module('mashaPortfolioAngularApp')
-.controller('WorkCtrl', ['$scope', '$timeout', 'portfolio', '$routeParams',
-    function ($scope, $timeout, portfolio, $routeParams) {
+.controller('WorkCtrl', ['$scope', '$timeout', 'portfolio', '$routeParams', '$rootScope',
+    function ($scope, $timeout, portfolio, $routeParams, $rootScope) {
 
         var workId = $routeParams.workId;
     
@@ -21,6 +21,7 @@ angular
         $scope.work = portfolioWork;
         $scope.next = next;
         $scope.prev = prev;
+        $scope.lastGroup = $rootScope.lastGroup;
 
     }
 ]);
