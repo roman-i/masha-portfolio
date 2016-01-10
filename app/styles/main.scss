@@ -266,6 +266,9 @@ right:1%;
 .filter-options {
   text-align: center;
   color: $grayColor;
+  a {
+    color: $grayColor;
+  }
 }
 
 a, a:hover {

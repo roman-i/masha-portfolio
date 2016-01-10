@@ -24,7 +24,17 @@ angular
         controller: 'MainCtrl',
         reloadOnSearch: false
       })
+      .when('/:groupId', {
+        templateUrl: 'views/main.html',
+        controller: 'MainCtrl',
+        reloadOnSearch: false
+      })
       .when('/main', {
+        templateUrl: 'views/main.html',
+        controller: 'MainCtrl',
+        reloadOnSearch: false
+      })
+      .when('/main/:groupId', {
         templateUrl: 'views/main.html',
         controller: 'MainCtrl',
         reloadOnSearch: false
