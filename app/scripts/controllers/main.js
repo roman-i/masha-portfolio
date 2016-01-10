@@ -10,7 +10,7 @@
  * Controller of the mashaPortfolioAngularApp
  */
 angular.module('mashaPortfolioAngularApp')
-  .controller('MainCtrl', ['$scope', '$timeout', 'portfolio', function ($scope, $timeout, portfolio) {
+  .controller('MainCtrl', ['$scope', '$timeout', 'portfolio', '$routeParams', '$location', function ($scope, $timeout, portfolio, $routeParams, $location) {
 
     $scope.portfolio = portfolio;
 
@@ -19,14 +19,24 @@ angular.module('mashaPortfolioAngularApp')
               $sizer = $grid.find('.shuffle__sizer');
 
           $grid.shuffle({
-            itemSelector: '.picture-item',
-            sizer: $sizer
+              itemSelector: '.picture-item',
+              sizer: $sizer
           });
 
-          $('.filter-options button').click(function() {
+          //$state.transitionTo('search', {q: 'updated search term'}, { notify: false });
+
+
+          $('.filter-options a').click(function() {
             var grp = $(this).data('group');
+            // $location.search('group', grp);
             $grid.shuffle('shuffle', grp);
+            return false;
           }); 
+
+          // if ($routeParams && $routeParams.categoryId) {
+          //   $grid.shuffle('shuffle', $routeParams.categoryId);
+          // }
+
     };
   }])
 .directive('postRender', [ '$timeout', function($timeout) {

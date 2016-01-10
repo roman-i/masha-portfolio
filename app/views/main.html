@@ -1,5 +1,5 @@
  <div class="filter-options">
-  <button ng-repeat="category in portfolio.categories" class="btn btn-clear" data-group="{{category.name}}">{{category.title}}</button>
+  <a ng-repeat="category in portfolio.categories" class="btn btn-clear" data-group="{{category.name}}" href='/#/main/{{category.name}}'>{{category.title}}</a>
 </div>  
 
 <div id="grid" class="row-fluid works-grid">
