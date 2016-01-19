@@ -160,12 +160,12 @@ $cellSize : 330px;
     
     li {
       display: inline;
-      margin-left: 3px;
+      margin-left: 6px;
 
       a {
         color: #CCCCCC ! important;
         font-variant: small-caps;
-        font-size: 12px;
+        font-size: 16px;
         padding-top: 0px;
         padding-bottom: 15px;
         padding-left: 5px;
@@ -261,8 +261,6 @@ right:1%;
 
 
 
-
-
 .filter-options {
   text-align: center;
   color: $grayColor;
@@ -270,6 +268,10 @@ right:1%;
     color: $grayColor;
     &.selected {
       color: black;
+    }
+    &:active {
+      -webkit-box-shadow: none;
+      box-shadow: none;
     }
   }
 }
