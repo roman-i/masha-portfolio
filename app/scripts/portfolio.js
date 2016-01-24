@@ -125,18 +125,18 @@ factory('portfolio', ['$sce', function($sce) {
         ]
     };
 
-    var hyperLoop = {
-        title: 'hyper loop',
-        id: 'hyper-loop',
-        image: 'images/thumbs/hyperloop.png',
-        description: $sce.trustAsHtml('It\'s a concept of a website for Hyperloop, a train built on <a href="http://www.teslamotors.com/blog/hyperloop" target="_blank">innovative transportation technology</a>. I created a web page advertising the Hyperloop to potential passengers. I kept responsiveness in mind: the design is easily translated to a mobile platform. Please check this <a href="http://www.marvladimirovna.com/yukhimenko_hyperloop.pdf" target="_blank">high fidelity version</a>.'),
-        groups: [WEB],
-        attachments: [
-            {
-               image: 'images/hyper/hyperloop_big.png'
-            }
-        ]
-    };
+    // var hyperLoop = {
+    //     title: 'hyper loop',
+    //     id: 'hyper-loop',
+    //     image: 'images/thumbs/hyperloop.png',
+    //     description: $sce.trustAsHtml('It\'s a concept of a website for Hyperloop, a train built on <a href="http://www.teslamotors.com/blog/hyperloop" target="_blank">innovative transportation technology</a>. I created a web page advertising the Hyperloop to potential passengers. I kept responsiveness in mind: the design is easily translated to a mobile platform. Please check this <a href="http://www.marvladimirovna.com/yukhimenko_hyperloop.pdf" target="_blank">high fidelity version</a>.'),
+    //     groups: [WEB],
+    //     attachments: [
+    //         {
+    //            image: 'images/hyper/hyperloop_big.png'
+    //         }
+    //     ]
+    // };
 
     var beardMen = {
         title: '8-bit beard men',
@@ -279,9 +279,9 @@ factory('portfolio', ['$sce', function($sce) {
         beardMen,
         origami,
         videos,
-        hyperLoop,
-        weather,
-        photo,
+        //hyperLoop,
+        //weather,
+        //photo,
         eggTimer
     ];
 
