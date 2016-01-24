@@ -16,18 +16,18 @@ angular.module('mashaPortfolioAngularApp')
 
     $scope.portfolio = portfolio;
 
-    function shuffleAndUpdateGroup() {
-        var group = $route.current.params.groupId || 'all';
-        $scope.group = group;
-        $grid.shuffle('shuffle', $scope.group);
-        $rootScope.lastGroup = group;
-    }
+    // function shuffleAndUpdateGroup() {
+    //     var group = $route.current.params.groupId || 'all';
+    //     $scope.group = group;
+    //     $grid.shuffle('shuffle', $scope.group);
+    //     $rootScope.lastGroup = group;
+    // }
 
     var lastRoute = $route.current;
     $scope.$on('$locationChangeSuccess', function() {
       if (lastRoute.$$route.controller === $route.current.$$route.controller) {
 
-        shuffleAndUpdateGroup();
+        // shuffleAndUpdateGroup();
 
         $route.current = lastRoute;
       }
@@ -39,8 +39,6 @@ angular.module('mashaPortfolioAngularApp')
           itemSelector: '.picture-item',
           sizer: $sizer
       });
-
-      shuffleAndUpdateGroup();
     };
   }])
 .directive('postRender', [ '$timeout', function($timeout) {

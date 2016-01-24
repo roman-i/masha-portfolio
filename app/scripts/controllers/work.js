@@ -21,7 +21,7 @@ angular
         $scope.work = portfolioWork;
         $scope.next = next;
         $scope.prev = prev;
-        $scope.lastGroup = $rootScope.lastGroup;
+        $scope.portfolio = portfolio;
 
     }
 ]);

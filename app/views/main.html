@@ -1,10 +1,4 @@
- <div class="filter-options">
-  <a ng-repeat="category in portfolio.categories"
-     class="btn btn-clear"
-     data-group="{{category.name}}"
-     ng:class="{true:'selected', false:''}[category.name==group]"
-     href='/#/{{category.name}}'>{{category.title}}</a>
-</div>  
+<div ng-include="'views/pagination.html'"></div>
 
 <div id="grid" class="row-fluid works-grid">
   <figure ng-repeat="work in portfolio.works" class="span3 picture-item" data-groups='{{work.groups}}'>

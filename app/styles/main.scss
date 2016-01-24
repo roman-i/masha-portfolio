@@ -1,7 +1,9 @@
 // bower:scss
 // endbower
 
-$grayColor: #CCCCCC;
+$grayColor: rgb(204, 204, 204); //rgb(153, 153, 153);
+$lightGrayColor: rgb(204, 204, 204);
+$redColor: rgb(252, 152, 152);
 
 .browsehappy {
   margin: 0.2em 0;
@@ -76,6 +78,8 @@ body {
 $cellSize : 330px;
 
 .works-grid {
+  margin-left: -10px;
+  margin-top: 20px;
   background-color: transparent;
   .picture-item {
     
@@ -115,14 +119,16 @@ $cellSize : 330px;
 
 .work {
   .work-title {
-    font-weight: bold;
-    font-size: 23px;
+    font-size: 11pt;
+    letter-spacing: 1.7pt;
   }
 
 
   .work-desc {
+    letter-spacing: 1pt;
     padding-top: 20px;
-    color: $grayColor;
+    color: $lightGrayColor;
+    font-size: 10pt;
   }
 
   .work-item {
@@ -136,6 +142,8 @@ $cellSize : 330px;
 
 .navigation {
   color: black;
+  padding-top: 40px;
+  padding-bottom: 40px;
   a {
     color: black;
     margin-right: 20px;
@@ -231,32 +239,132 @@ right:1%;
   text-align: center;
 }
 
+.container {
+  position: relative;
+  padding: 10px;
+}
+
+.work-pagination-wrapper {
+  position: absolute;
+  right: 10px;
+  top: 200pt;
+  z-index: 30;
+}
+
+
+
+span.line_wrap {
+    position:relative;
+    display: block;        
+}
+span.line {
+    display:block;
+    position:absolute;
+    left:0;
+    top:50%;
+    width:0;
+    border-top:2px solid black;
+    -webkit-transition: width 0.5s ease-in;
+}
+span.line_wrap:hover span.line, li.selected span.line {
+    width:100%;    
+}
+span.line_wrap:hover span.line {
+  border-top:2px solid $redColor;
+}
+
 .about-me {
-  margin-top: 20px;
-  margin-bottom: 20px;
+  > span {
+    letter-spacing: 2.1pt;
+  }
+  position: relative;
+  padding-top: 65pt;
+  padding-bottom: 20px;
   text-align: center;
-  max-width: 560px;
-    margin-left: auto;
-  margin-right: auto;
+  height: 170pt;
+  font-size: 11pt;
+}
+
+.name-and-social {
+  > span {
+    display: block;
+    height: 13pt;
+    margin-bottom: 8pt;
+    letter-spacing: 2.4pt;
+  }
+  position: absolute;
+  left: 0;
+  top: 71pt;
+  font-size: 10pt;
+  text-align: left;
+  color: $grayColor;
+  ul.social-icons {
+    margin-top: 14px;
+    list-style: none;
+    padding: 0;
+    li {
+      display: inline-block;
+      color: $grayColor;
+      padding: 0;
+      margin-right: 5px;
+      a {
+        font-size: 18px;
+        color: $grayColor;
+      }
+    }
+  }
+}
+
+.work-index {
+  list-style: none;
+  padding: 0;
+  width: 20px;
+  display: block;
+  padding-left: 10px;
+  text-align: center;
+  li {
+    text-align: center;
+    width: 20px;
+    display: inline-block;
+    text-align: center;
+    a {
+      font-size: 10pt;
+      padding-bottom: 12px;
+      display: block;
+      font-size: 10pt;
+      color: $lightGrayColor;
+      text-decoration: none;
+    }
+    &.selected {
+      a {
+        color: black;
+      }
+    }
+    a:hover {
+      color: black;
+    }
+    a.home {
+      font-size: 16pt;
+    }
+    a.home.selected, a.home:hover {
+      color: $redColor;
+    }
+  }
+
 }
 
 
 .navigation {
-  .fa-long-arrow-right, .fa-long-arrow-left {
-    color: $grayColor;
+  .ion-ios-arrow-thin-right, .ion-ios-arrow-thin-left, .ion-ios-close-empty {
+    color: black;
+    font-size: 14pt;
   }
   .prev, .next {
-    margin-left: 100px;
+    margin-left: 50pt;
   }
-
-  .close-icon {
-    display: inline-block;
-    width: 14px;
-    height: 14px;
-    background-image: url(../images/close_icon.png);
-    background-repeat: no-repeat;
+  a {
+    text-decoration: none;
   }
-
 }
 
 

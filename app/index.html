@@ -11,6 +11,7 @@
     <!-- build:css(.) styles/vendor.css -->
     <!-- bower:css -->
     <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css" />
+    <link rel="stylesheet" href="bower_components/ionicons/css/ionicons.css" />
     <!-- endbower -->
     <!-- endbuild -->
     <!-- build:css(.tmp) styles/main.css -->
@@ -25,46 +26,45 @@
     <!-- Add your site or application content here -->
     <div class="navbar navbar-default ">
 
-
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#social" aria-expanded="false" aria-controls="navbar">
-            <span class="sr-only">Toggle navigation</span>
-            <i class="fa fa-bars"></i>
-          </button>
-          <a class="logo navbar-brand">
-            <img src="images/logo2.png" width="150px" />   
-          </a>
-        </div>
-
-
-          <div class="navbar-collapse collapse social" id="social">
-            <ul class="nav navbar-nav">
-                <li>
-                    <a href="https://www.linkedin.com/in/mariyayukhimenko" target="new">
-                        linkedin
-                    </a>
-                </li>
-                <li>
-                    <a href="https://dribbble.com/mariya-yukhimenko" target="new">
-                        dribble
-                    </a>
-                </li>
-                <li>
-                    <a href="mailto:marvladimirovna@gmail.com" target="new">
-                        email
-                    </a>
-                </li>
-            </ul>
-        </div>
-
-        <div class="about-me">
-            Hello, my name is Mariya Yukhimenko and I am a designer in the San Francisco Bay Area. I am focused on mobile, illustration and data visualization design.
-        </div>
-
-
     <base href="/" />
 
     <div class="container">
+        
+        <div class="about-me">
+            <span>
+                Hello there...
+            </span>
+            <div class="name-and-social">
+                <span>
+                mariya
+                </span>
+                <span>
+                yukhmenko
+                </span>
+                <span>
+                ui/ux designer
+                </span>
+                <ul class="social-icons">
+                    <li>
+                        <a href="https://www.linkedin.com/in/mariyayukhimenko" target="new">
+                            <i class="fa fa-linkedin-square"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://dribbble.com/mariya-yukhimenko" target="new">
+                            <i class="fa fa-dribbble"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="mailto:marvladimirovna@gmail.com" target="new">
+                            <i class="fa fa-envelope-o"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+
         <div ng-view=""></div>
     </div>
 

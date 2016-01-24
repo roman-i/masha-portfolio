@@ -55,9 +55,9 @@ factory('portfolio', ['$sce', function($sce) {
             {
                 image: 'images/bunny/screens.png'
             },
-            {
-                image: 'images/race/last_screen.jpg'
-            },
+            // {
+            //     image: 'images/race/last_screen.jpg'
+            // },
             {
                 html: $sce.trustAsHtml('<img src="images/race/evolution.gif" style="max-width: 130px"/>')
             },
@@ -69,10 +69,11 @@ factory('portfolio', ['$sce', function($sce) {
             },
             {
                 image: 'images/race/icons_1.png'
-            },
-            {
-                html: $sce.trustAsHtml('<iframe class="marvel-proto" src="https://marvelapp.com/gehdhe?emb=1" width="443" height="933" allowTransparency="true" frameborder="0"></iframe>')
             }
+            // ,
+            // {
+            //     html: $sce.trustAsHtml('<iframe class="marvel-proto" src="https://marvelapp.com/gehdhe?emb=1" width="443" height="933" allowTransparency="true" frameborder="0"></iframe>')
+            // }
         ]
     };
 
