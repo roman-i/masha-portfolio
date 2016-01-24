@@ -70,10 +70,6 @@ factory('portfolio', ['$sce', function($sce) {
             {
                 image: 'images/race/icons_1.png'
             }
-            // ,
-            // {
-            //     html: $sce.trustAsHtml('<iframe class="marvel-proto" src="https://marvelapp.com/gehdhe?emb=1" width="443" height="933" allowTransparency="true" frameborder="0"></iframe>')
-            // }
         ]
     };
 

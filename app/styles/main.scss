@@ -388,31 +388,25 @@ a, a:hover {
   color: black;
 }
 
-@media (max-width: 600px) {
-.download_resume, .marvel-proto {
-  display: none;
-} 
-}
-
-@media (min-width: 768px) {
-  .social {
-    ul {
-      float: right;
-      margin-right: 20px;
-      a {
-        padding-top: 0;
-      }
-    }
+@media (max-width: 710px) {
+  .work-pagination-wrapper {
+    left: 340px;
   }
 }
 
-@media (max-width: 767px) {
-  .social {
-    ul {
-      float: none;
-    }
+@media (min-width: 711px) and (max-width: 1200px) {
+  .work-pagination-wrapper {
+    left: 680px;
   }
 }
+
+@media (min-width: 1201px){
+  .work-pagination-wrapper {
+    left: 1040px;
+  }
+}
+
+
 
 .footer {
   border:0;

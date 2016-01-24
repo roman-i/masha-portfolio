@@ -26,7 +26,6 @@ angular.module('mashaPortfolioAngularApp')
     var lastRoute = $route.current;
     $scope.$on('$locationChangeSuccess', function() {
       if (lastRoute.$$route.controller === $route.current.$$route.controller) {
-
         // shuffleAndUpdateGroup();
 
         $route.current = lastRoute;
