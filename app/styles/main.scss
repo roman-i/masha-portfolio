@@ -389,19 +389,19 @@ a, a:hover {
 }
 
 @media (max-width: 710px) {
-  .work-pagination-wrapper {
+  .in-main .work-pagination-wrapper {
     left: 340px;
   }
 }
 
 @media (min-width: 711px) and (max-width: 1200px) {
-  .work-pagination-wrapper {
+  .in-main .work-pagination-wrapper {
     left: 680px;
   }
 }
 
 @media (min-width: 1201px){
-  .work-pagination-wrapper {
+  .in-main .work-pagination-wrapper {
     left: 1040px;
   }
 }
