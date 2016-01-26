@@ -62,13 +62,10 @@ factory('portfolio', ['$sce', function($sce) {
                 html: $sce.trustAsHtml('<img src="images/race/evolution.gif" style="max-width: 130px"/>')
             },
             {
-                image: 'images/race/icons_3.png'
+                image: 'images/bunny/_blender_icons_for_website.png'
             },
             {
-                image: 'images/race/icons_2.png'
-            },
-            {
-                image: 'images/race/icons_1.png'
+                image: 'images/bunny/_blender_icons_for_website_2.png'
             }
         ]
     };
@@ -102,7 +99,7 @@ factory('portfolio', ['$sce', function($sce) {
     var foodVis = {
         title: 'food visualization',
         id: 'food-visualization',
-        image: 'images/thumbs/food.png',
+        image: 'images/thumbs/food_info_thumb_nail.png',
         description: $sce.trustAsHtml('This is a PNG version of a website where you can find out what kind of food I ate fall 2014. I collected the data over a couple months to see the pattern and then visualized it. Click <a href="info_big.png" target="_blank">here</a> to see it in a good resolution with more details.'),
         groups: [DATA_VIS],
         attachments: [
@@ -110,6 +107,61 @@ factory('portfolio', ['$sce', function($sce) {
                 image: 'images/viz/food.png'
             }
         ]
+    };
+
+    var mittens = {
+        title: 'mittens app',
+        id: 'mittens',
+        image: 'images/thumbs/thumbnail_mittens.png',
+        description: 'I had a short break during the Christmas time, so I decided to create something festive and fun for holidays. It’s an memory app, where the user should pair two mittens with the same ornament by tapping on each to flip and see the actual ornament.',
+        groups: [MOBILE],
+        attachments: [
+            {
+                image: 'images/mittens/pair_mittens_web.gif'
+            },
+            {
+                image: 'images/mittens/icons_mittens.png'
+            }
+        ]
+    };
+
+    var tipCalculator = {
+        title: 'tip calculator',
+        id: 'tip',
+        image: 'images/thumbs/tips_thumb_nail.png',
+        description: 'It was a weekend project collaboratively with my husband Roman Inozemtsev. The app that calculates the tips for you in a simple and minimal design. Roman coded this app. It’s releasing soon in app store.',
+        groups: [MOBILE],
+        attachments: [
+            {
+                image: 'images/tip/tips_web.gif'
+            }
+        ]        
+    };
+
+    var gasStation = {
+        title: 'gas station app',
+        id: 'gas',
+        image: 'images/thumbs/gas_thumbnail.png',
+        description: 'By using this app you can pay and activate the actual pump on a gas station. By simply clicking on big button pump on an app home screen you are provided with options of gas types and money amount that you wanna spend on it.',
+        groups: [MOBILE],
+        attachments: [
+            {
+                image: 'images/gas/gas_web.gif'
+            }
+        ]          
+    };
+
+    var bankApp = {
+        title: 'bank app',
+        id: 'bank',
+        image: 'images/thumbs/bank_thumb_nail.png',
+        description: 'A concept for banking app. As you can see by tapping on a view statistics you can see the graph. If you slide the stats screen up the graph will collapse to a smaller size. This concept was developed during my work at Y Media Labs.',
+        groups: [MOBILE],
+        attachments: [
+            {
+                image: 'images/bank/bank_web.gif'
+            }
+        ]            
     };
 
     var musicVis = {
@@ -147,6 +199,19 @@ factory('portfolio', ['$sce', function($sce) {
         attachments: [
             {
                 image: 'images/pixel/pixel_big.png'
+            }
+        ]
+    };
+
+    var musicApp = {
+        title: 'music app',
+        id: 'music-app',
+        image: 'images/thumbs/music_thumb_nail.png',
+        description: 'This app is for melomans, for people who truly appreciate music. Most of the time my friends and I listen to music on the phone. Sometimes I want to leave a mood note while listening. So this app is a music diary, when you can leave notes and listen to music at the same time. This app provides the data analysis of music to see the behavioral patterns.',
+        groups: [ILLUSTRATION],
+        attachments: [
+            {
+                image: 'images/music-app/music_web.png'
             }
         ]
     };
@@ -271,10 +336,15 @@ factory('portfolio', ['$sce', function($sce) {
     };
 
     var works = [
+        musicApp,
+        gasStation,
+        mittens,
+        bankApp,
+        tipCalculator,
         raceTheBunny, 
         foodVis,
-        chewWell,
-        airHockey,
+        //chewWell,
+        //airHockey,
         musicVis,
         beardMen,
         // origami,
