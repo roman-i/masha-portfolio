@@ -344,10 +344,13 @@ span.line_wrap:hover span.line {
       color: black;
     }
     a.home {
-      font-size: 16pt;
+      background-image: url(../images/home_grey.png);
+      background-size: 17px;
+      background-repeat: no-repeat;
+      height: 20px;
     }
     a.home.selected, a.home:hover {
-      color: $redColor;
+      background-image: url(../images/home_icon.png);
     }
   }
 
