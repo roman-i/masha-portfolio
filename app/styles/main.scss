@@ -135,7 +135,7 @@ $cellSize : 330px;
     img, iframe {
       max-width: 100%;
     }
-    text-align: center;
+    text-align: left;
     padding-top: 50px;
   }
 }
@@ -246,7 +246,7 @@ right:1%;
 
 .work-pagination-wrapper {
   position: absolute;
-  right: 10px;
+  right: 20px;
   top: 200pt;
   z-index: 30;
 }
@@ -348,6 +348,7 @@ span.line_wrap:hover span.line {
       background-size: 14px;
       background-repeat: no-repeat;
       height: 20px;
+      background-position-x: 3px;
     }
     a.home.selected, a.home:hover {
       background-image: url(../images/home_icon.png);
@@ -412,6 +413,11 @@ a, a:hover {
 */
 
 
+@media (max-width: 600px) {
+  .work-pagination-wrapper {
+    display: none;
+  }
+}
 
 .footer {
   border:0;
@@ -421,3 +427,9 @@ a, a:hover {
     color: $grayColor;
   }
 } 
+
+.container {
+    width: 100% ! important;
+    padding-left: 40px;
+    padding-right: 40px;
+}
