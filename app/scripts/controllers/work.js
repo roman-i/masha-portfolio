@@ -9,8 +9,8 @@
  */
 angular
 .module('mashaPortfolioAngularApp')
-.controller('WorkCtrl', ['$scope', '$timeout', 'portfolio', '$routeParams', '$rootScope',
-    function ($scope, $timeout, portfolio, $routeParams, $rootScope) {
+.controller('WorkCtrl', ['$scope', '$timeout', 'portfolio', '$routeParams',
+    function ($scope, $timeout, portfolio, $routeParams) {
 
         var workId = $routeParams.workId;
     

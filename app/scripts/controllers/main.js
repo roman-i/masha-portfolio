@@ -10,7 +10,7 @@
  * Controller of the mashaPortfolioAngularApp
  */
 angular.module('mashaPortfolioAngularApp')
-  .controller('MainCtrl', ['$scope', '$timeout', 'portfolio', '$routeParams', '$location', '$route', '$rootScope', function ($scope, $timeout, portfolio, $routeParams, $location, $route, $rootScope) {
+  .controller('MainCtrl', ['$scope', '$timeout', 'portfolio', '$routeParams', '$location', '$route', function ($scope, $timeout, portfolio, $routeParams, $location, $route) {
 
     var $grid = $('#grid');  
 

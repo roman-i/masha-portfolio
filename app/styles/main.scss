@@ -94,7 +94,8 @@ $cellSize : 330px;
 
     img {
       width: $cellSize;
-      height: $cellSize;
+      /*height: $cellSize;*/
+      max-width: 100%;
     }
     &:hover .desc {
       display: block;
@@ -431,10 +432,19 @@ a, a:hover {
 */
 
 
-@media (max-width: 600px) {
+@media (max-width: 700px) {
   .work-pagination-wrapper {
     display: none;
   }
+  .scroll-hint {
+    display: none;
+  }
+
+  .about-me {
+    text-align: left;
+    padding-top: 40pt;
+  }
+
 }
 
 .footer {

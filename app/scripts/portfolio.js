@@ -70,31 +70,31 @@ factory('portfolio', ['$sce', function($sce) {
         ]
     };
 
-    var chewWell = {
-        title: 'chew well',
-        id: 'chew-well',
-        image: 'images/thumbs/chew.png',
-        groups: [MOBILE],
-        description: 'Chew well is an application that helps to improve your health by slowly chewing food. You can set up a timer for each bite and get an alert when it is time for the next one. <a target="_blank" href="https://itunes.apple.com/us/app/chew-well/id879994842?mt=8">download ios</a>',
-        attachments: [
-            {
-                image: 'images/chew/chew_well.png'
-            }
-        ]
-    };
+    // var chewWell = {
+    //     title: 'chew well',
+    //     id: 'chew-well',
+    //     image: 'images/thumbs/chew.png',
+    //     groups: [MOBILE],
+    //     description: 'Chew well is an application that helps to improve your health by slowly chewing food. You can set up a timer for each bite and get an alert when it is time for the next one. <a target="_blank" href="https://itunes.apple.com/us/app/chew-well/id879994842?mt=8">download ios</a>',
+    //     attachments: [
+    //         {
+    //             image: 'images/chew/chew_well.png'
+    //         }
+    //     ]
+    // };
 
-    var airHockey = {
-        title: 'air hockey',
-        id: 'air-hockey',
-        image: 'images/thumbs/airhockey.png',
-        description: $sce.trustAsHtml('Air hockey is a mobile version of a game for all air hockey lovers. I worked as a designer on this weekend project. The design is clean and simple in a flat style. Enjoy! <a target="_blank" href="https://itunes.apple.com/us/app/flat-air-hockey/id879369254?mt=8">download ios</a> / <a target="_blank" href="https://play.google.com/store/apps/details?id=com.romani.airhockey">download android</a>'),
-        groups: [MOBILE],
-        attachments: [
-            {
-                image: 'images/airhockey/airhockey.png'
-            }
-        ]
-    };
+    // var airHockey = {
+    //     title: 'air hockey',
+    //     id: 'air-hockey',
+    //     image: 'images/thumbs/airhockey.png',
+    //     description: $sce.trustAsHtml('Air hockey is a mobile version of a game for all air hockey lovers. I worked as a designer on this weekend project. The design is clean and simple in a flat style. Enjoy! <a target="_blank" href="https://itunes.apple.com/us/app/flat-air-hockey/id879369254?mt=8">download ios</a> / <a target="_blank" href="https://play.google.com/store/apps/details?id=com.romani.airhockey">download android</a>'),
+    //     groups: [MOBILE],
+    //     attachments: [
+    //         {
+    //             image: 'images/airhockey/airhockey.png'
+    //         }
+    //     ]
+    // };
 
     var foodVis = {
         title: 'food visualization',
@@ -216,111 +216,111 @@ factory('portfolio', ['$sce', function($sce) {
         ]
     };
 
-    var origami = {
-        title: 'origami illustrations',
-        id: 'origami-illustrations',
-        image: 'images/thumbs/origami.png',
-        description: $sce.trustAsHtml('I like the origami art, so I tried this style in photoshop. For each picture I have a reference photo or simple tutorial, which helps me to understand how the figure is folded. Here is an <a target="_blank" href="https://instagram.com/origamimarvla/">instagram account</a> for this origami project. I am trying to keep it updated from time to time.'),
-        groups: [ILLUSTRATION],
-        attachments: [
-            {
-                image: 'images/origami/apple.png'
-            },
-            {
-                image: 'images/origami/bird.jpg'
-            },
-            {
-                image: 'images/origami/foldable_letter.jpg'
-            },
-            {
-                image: 'images/origami/mouse.jpg'
-            },
-            {
-                image: 'images/origami/penguin.jpg'
-            },
-            {
-                image: 'images/origami/rabbbit.png'
-            },
-            {
-                image: 'images/origami/rabbit.jpg'
-            },
-            {
-                image: 'images/origami/ship.jpg'
-            },
-            {
-                image: 'images/origami/swan.jpg'
-            },
-            {
-                image: 'images/origami/umbrella.jpg'
-            }
-        ]
-    };
+    // var origami = {
+    //     title: 'origami illustrations',
+    //     id: 'origami-illustrations',
+    //     image: 'images/thumbs/origami.png',
+    //     description: $sce.trustAsHtml('I like the origami art, so I tried this style in photoshop. For each picture I have a reference photo or simple tutorial, which helps me to understand how the figure is folded. Here is an <a target="_blank" href="https://instagram.com/origamimarvla/">instagram account</a> for this origami project. I am trying to keep it updated from time to time.'),
+    //     groups: [ILLUSTRATION],
+    //     attachments: [
+    //         {
+    //             image: 'images/origami/apple.png'
+    //         },
+    //         {
+    //             image: 'images/origami/bird.jpg'
+    //         },
+    //         {
+    //             image: 'images/origami/foldable_letter.jpg'
+    //         },
+    //         {
+    //             image: 'images/origami/mouse.jpg'
+    //         },
+    //         {
+    //             image: 'images/origami/penguin.jpg'
+    //         },
+    //         {
+    //             image: 'images/origami/rabbbit.png'
+    //         },
+    //         {
+    //             image: 'images/origami/rabbit.jpg'
+    //         },
+    //         {
+    //             image: 'images/origami/ship.jpg'
+    //         },
+    //         {
+    //             image: 'images/origami/swan.jpg'
+    //         },
+    //         {
+    //             image: 'images/origami/umbrella.jpg'
+    //         }
+    //     ]
+    // };
 
-    var videos = {
-        title: 'videos',
-        id: 'videos',
-        image: 'images/thumbs/video.png',
-        description: $sce.trustAsHtml('Here are some videos from my internship at mixbit.com as a motion graphic intern and videos that I created for fun. If you would like to see more works that I did at mixbit.com, please check it <a target="new" href="https://www.youtube.com/playlist?list=PLNexlchFah07BdQQHOgoFJ2-uX0CFkKxG">here</a>'),
-        groups: [VIDEO],
-        attachments: [
-            {
-                html: $sce.trustAsHtml('<iframe src="https://player.vimeo.com/video/116809195" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>')
-            },
-            {
-                html: $sce.trustAsHtml('<iframe src="https://player.vimeo.com/video/116808992" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>')
-            },
-            {
-                html: $sce.trustAsHtml('<iframe src="https://player.vimeo.com/video/116804000" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>')
-            },
-            {
-                html: $sce.trustAsHtml('<iframe src="https://player.vimeo.com/video/67361831" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>')
-            },
-            {
-                html: $sce.trustAsHtml('<iframe src="https://player.vimeo.com/video/63626739" width="500" height="367" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>')
-            }
-        ]
-    };
+    // var videos = {
+    //     title: 'videos',
+    //     id: 'videos',
+    //     image: 'images/thumbs/video.png',
+    //     description: $sce.trustAsHtml('Here are some videos from my internship at mixbit.com as a motion graphic intern and videos that I created for fun. If you would like to see more works that I did at mixbit.com, please check it <a target="new" href="https://www.youtube.com/playlist?list=PLNexlchFah07BdQQHOgoFJ2-uX0CFkKxG">here</a>'),
+    //     groups: [VIDEO],
+    //     attachments: [
+    //         {
+    //             html: $sce.trustAsHtml('<iframe src="https://player.vimeo.com/video/116809195" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>')
+    //         },
+    //         {
+    //             html: $sce.trustAsHtml('<iframe src="https://player.vimeo.com/video/116808992" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>')
+    //         },
+    //         {
+    //             html: $sce.trustAsHtml('<iframe src="https://player.vimeo.com/video/116804000" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>')
+    //         },
+    //         {
+    //             html: $sce.trustAsHtml('<iframe src="https://player.vimeo.com/video/67361831" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>')
+    //         },
+    //         {
+    //             html: $sce.trustAsHtml('<iframe src="https://player.vimeo.com/video/63626739" width="500" height="367" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>')
+    //         }
+    //     ]
+    // };
 
-    var weather = {
-        title: 'weather closet',
-        id: 'weather',
-        image: 'images/thumbs/weather.png',
-        description: 'This is a concept of a responsive website, which shows not only temperature numbers, but also suggests the actual clothing to wear (layer, rain coat, umbrella etc). Also this website is a place, where you can check and compare what to wear in different place. It could be really useful if you travel a lot.',
-        groups: [WEB],
-        attachments: [
-            {
-                image: 'images/weather/weather_mobile.gif'
-            },
-            {
-               image: 'images/weather/weather_screens.png'
-            }
-        ]
-    };
+    // var weather = {
+    //     title: 'weather closet',
+    //     id: 'weather',
+    //     image: 'images/thumbs/weather.png',
+    //     description: 'This is a concept of a responsive website, which shows not only temperature numbers, but also suggests the actual clothing to wear (layer, rain coat, umbrella etc). Also this website is a place, where you can check and compare what to wear in different place. It could be really useful if you travel a lot.',
+    //     groups: [WEB],
+    //     attachments: [
+    //         {
+    //             image: 'images/weather/weather_mobile.gif'
+    //         },
+    //         {
+    //            image: 'images/weather/weather_screens.png'
+    //         }
+    //     ]
+    // };
 
-    var photo = {
-        title: 'photography',
-        id: 'photo',
-        image: 'images/thumbs/photo.png',
-        description: 'Here are my photos from different places around the world in the photo miniature style.',
-        groups: [PHOTO],
-        attachments: [
-            {
-                image: 'images/photos/alaska.jpg'
-            },
-            {
-                image: 'images/photos/sun.jpg'
-            },
-            {
-                image: 'images/photos/tilt2.jpg'
-            },
-            {
-                image: 'images/photos/tilt_shift.jpg'
-            },
-            {
-                image: 'images/photos/shift.jpg'
-            }
-        ]
-    };
+    // var photo = {
+    //     title: 'photography',
+    //     id: 'photo',
+    //     image: 'images/thumbs/photo.png',
+    //     description: 'Here are my photos from different places around the world in the photo miniature style.',
+    //     groups: [PHOTO],
+    //     attachments: [
+    //         {
+    //             image: 'images/photos/alaska.jpg'
+    //         },
+    //         {
+    //             image: 'images/photos/sun.jpg'
+    //         },
+    //         {
+    //             image: 'images/photos/tilt2.jpg'
+    //         },
+    //         {
+    //             image: 'images/photos/tilt_shift.jpg'
+    //         },
+    //         {
+    //             image: 'images/photos/shift.jpg'
+    //         }
+    //     ]
+    // };
 
     var eggTimer = {
         title: 'egg timer',
@@ -340,9 +340,9 @@ factory('portfolio', ['$sce', function($sce) {
         gasStation,
         mittens,
         bankApp,
+        foodVis,
         tipCalculator,
         raceTheBunny, 
-        foodVis,
         //chewWell,
         //airHockey,
         musicVis,
