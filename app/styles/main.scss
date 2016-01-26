@@ -144,9 +144,27 @@ $cellSize : 330px;
   color: black;
   padding-top: 40px;
   padding-bottom: 40px;
+  position: relative;
   a {
     color: black;
     margin-right: 20px;
+  }
+
+  .scroll-hint {
+    position: absolute;
+    left: 50%;
+    margin-left: -40px;
+    bottom: 0;
+    img {
+      width: 13px;
+    }
+    > span {
+      font-size: 10px;
+      margin-right: -5px;
+      color: $redColor;
+      transform: rotate(270deg);
+      display: inline-block;
+    }
   }
 }
 

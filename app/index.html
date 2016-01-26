@@ -114,6 +114,15 @@
         <script src="scripts/controllers/about.js"></script>
         <!-- endbuild -->
 
+    <script>
+    $(window).scroll(function() { 
+    if ($(this).scrollTop()> 100) { 
+        $('.scroll-hint').fadeOut(800); 
+    } else { 
+        $('.scroll-hint').fadeIn(800); 
+    } 
+    });
+    </script>
 
 
 </body>
