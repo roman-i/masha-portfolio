@@ -94,8 +94,7 @@ $cellSize : 330px;
 
     img {
       width: $cellSize;
-      /*height: $cellSize;*/
-      max-width: 100%;
+      height: $cellSize;
     }
     &:hover .desc {
       display: block;
@@ -114,6 +113,7 @@ $cellSize : 330px;
       color: white;
       text-decoration: none;
       font-variant: small-caps;
+      letter-spacing: 1.5pt;
     }
   }
 }
@@ -160,6 +160,7 @@ $cellSize : 330px;
       width: 13px;
     }
     > span {
+      letter-spacing: 1pt;
       font-size: 10px;
       margin-right: -5px;
       color: $redColor;
@@ -447,11 +448,22 @@ a, a:hover {
 
 }
 
+@media (max-width: 420px) {
+.works-grid {
+ .picture-item {
+    img {
+      width: 200px;
+      height: 200px;
+    }
+  }
+ }
+}
+
 .footer {
   border:0;
   background:0;
   .copyright {
-    font-size: 12px;
+    font-size: 11px;
     color: $grayColor;
   }
 } 

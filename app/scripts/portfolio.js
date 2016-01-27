@@ -58,9 +58,9 @@ factory('portfolio', ['$sce', function($sce) {
             // {
             //     image: 'images/race/last_screen.jpg'
             // },
-            {
-                html: $sce.trustAsHtml('<img src="images/race/evolution.gif" style="max-width: 130px"/>')
-            },
+            // {
+            //     html: $sce.trustAsHtml('<img src="images/race/evolution.gif" style="max-width: 130px"/>')
+            // },
             {
                 image: 'images/bunny/_blender_icons_for_website.png'
             },
@@ -342,10 +342,10 @@ factory('portfolio', ['$sce', function($sce) {
         bankApp,
         foodVis,
         tipCalculator,
-        raceTheBunny, 
         //chewWell,
         //airHockey,
         musicVis,
+        raceTheBunny, 
         beardMen,
         // origami,
         // videos,
