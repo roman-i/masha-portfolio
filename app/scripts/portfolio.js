@@ -167,7 +167,7 @@ factory('portfolio', ['$sce', function($sce) {
     var musicVis = {
         title: 'music visualization',
         id: 'music-visualization',
-        image: 'images/thumbs/music.png',
+        image: 'images/thumbs/thumbnail_music_info.png',
         description: $sce.trustAsHtml('This data visualization shows my listening habits during winter 2014. I was collecting data about my music from my Pandora account by using lastfm scrobbler, IFTTT.com and Echonext API. It is a fully functional website, so check it out <a target="_blank" href="http://infog.marvladimirovna.com/">here</a> (please be patient while it loads...).'),
         groups: [DATA_VIS],
         attachments: [
@@ -206,7 +206,7 @@ factory('portfolio', ['$sce', function($sce) {
     var musicApp = {
         title: 'music app',
         id: 'music-app',
-        image: 'images/thumbs/music_thumb_nail.png',
+        image: 'images/thumbs/music_thumbnail.png',
         description: 'This app is for melomans, for people who truly appreciate music. Most of the time my friends and I listen to music on the phone. Sometimes I want to leave a mood note while listening. So this app is a music diary, when you can leave notes and listen to music at the same time. This app provides the data analysis of music to see the behavioral patterns.',
         groups: [ILLUSTRATION],
         attachments: [
