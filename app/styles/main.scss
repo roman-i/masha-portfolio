@@ -75,7 +75,7 @@ body {
 
 }
 
-$cellSize : 330px;
+$cellSize : 200px;
 
 .works-grid {
   margin-left: -10px;
@@ -309,8 +309,8 @@ span.line_wrap:hover span.line {
   > span {
     display: block;
     height: 13pt;
-    margin-bottom: 8pt;
-    letter-spacing: 2.4pt;
+    letter-spacing: 2pt;
+    font-size: 12px;
   }
   position: absolute;
   left: 0;
@@ -469,7 +469,8 @@ a, a:hover {
 } 
 
 .container {
-    width: 100% ! important;
+    /*width: 100% ! important;*/
+    max-width: 950px;
     padding-left: 40px;
     padding-right: 40px;
 }
