@@ -70,6 +70,19 @@ factory('portfolio', ['$sce', function($sce) {
         ]
     };
 
+    var calendarApp = {
+        title: 'calendar app',
+        id: 'calendar-app',
+        image: 'images/thumbs/calendar_thumbnails.png',
+        groups: [MOBILE],
+        description: 'It was a weekend project: conceptualizing the calendar app and creating a clean and friendly experience for users. More screens are coming soon.',
+        attachments: [
+            {
+                image: 'images/calendar/calendar.gif'
+            }
+        ]
+    };
+
     // var chewWell = {
     //     title: 'chew well',
     //     id: 'chew-well',
@@ -142,7 +155,7 @@ factory('portfolio', ['$sce', function($sce) {
         title: 'gas station app',
         id: 'gas',
         image: 'images/thumbs/gas_thumbnail.png',
-        description: 'By using this app you can pay and activate the actual pump on a gas station. By simply clicking on big button pump on an app home screen you are provided with options of gas types and money amount that you wanna spend on it.',
+        description: 'By using this app you can pay and activate the actual pump on a gas station. By simply clicking on big button pump on an app home screen you are provided with options of gas types and money amount that you wanna spend on it. *The full prototype is available upon request.',
         groups: [MOBILE],
         attachments: [
             {
@@ -155,7 +168,7 @@ factory('portfolio', ['$sce', function($sce) {
         title: 'bank app',
         id: 'bank',
         image: 'images/thumbs/bank_thumb_nail.png',
-        description: 'A concept for banking app. As you can see by tapping on a view statistics you can see the graph. If you slide the stats screen up the graph will collapse to a smaller size. This concept was developed during my work at Y Media Labs.',
+        description: 'A concept for banking app. As you can see by tapping on a view statistics you can see the graph. If you slide the stats screen up the graph will collapse to a smaller size. This concept was developed during my work at Y Media Labs. *The full prototype is available upon request.',
         groups: [MOBILE],
         attachments: [
             {
@@ -322,18 +335,18 @@ factory('portfolio', ['$sce', function($sce) {
     //     ]
     // };
 
-    var eggTimer = {
-        title: 'egg timer',
-        id: 'egg-timer',
-        image: 'images/thumbs/egg5.png',
-        description: 'Here’s a concept of a simple mobile app - egg timer. It’s easy and fun to use.',
-        groups: [MOBILE],
-        attachments: [
-            {
-                html: $sce.trustAsHtml('<img src="images/eggs/egg.png" style="max-width: 70%" />')
-            }
-        ]
-    };
+    // var eggTimer = {
+    //     title: 'egg timer',
+    //     id: 'egg-timer',
+    //     image: 'images/thumbs/egg5.png',
+    //     description: 'Here’s a concept of a simple mobile app - egg timer. It’s easy and fun to use.',
+    //     groups: [MOBILE],
+    //     attachments: [
+    //         {
+    //             html: $sce.trustAsHtml('<img src="images/eggs/egg.png" style="max-width: 70%" />')
+    //         }
+    //     ]
+    // };
 
     var works = [
         musicApp,
@@ -352,7 +365,8 @@ factory('portfolio', ['$sce', function($sce) {
         //hyperLoop,
         //weather,
         //photo,
-        eggTimer
+        calendarApp
+        //eggTimer
     ];
 
     function findPos(id) {
