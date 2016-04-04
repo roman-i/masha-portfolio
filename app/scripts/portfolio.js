@@ -218,7 +218,7 @@ factory('portfolio', ['$sce', function($sce) {
         title: '8-bit beard men',
         id: '8-bit-beard-men',
         image: 'images/thumbs/pixels.png',
-        description: $sce.trustAsHtml('Once I tried to create an illustration in 8bit style I become obsessed. It was a fun project for me to create beard men in different clothing. You can find here superheroes and characters from daily life. Click <a target="_blank" href="https://instagram.com/pixelmarvla/">here</a> to see the instagram of this project.'),
+        description: $sce.trustAsHtml('Once I tried to create an illustration in 8bit style I become obsessed. It was a fun project for me to create beard men in different clothing. You can find here superheroes and characters from daily life. Click <a target="_blank" href="https://society6.com/mariyayukhimenko">here</a> to purchase it on society6. *More works are available upon request.'),
         groups: [ILLUSTRATION],
         attachments: [
             {
