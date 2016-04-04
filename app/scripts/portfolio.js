@@ -174,7 +174,18 @@ factory('portfolio', ['$sce', function($sce) {
             {
                 image: 'images/bank/bank_web.gif'
             }
-        ]            
+        ],
+        tools: [
+            "Blender",
+            "Illustrator",
+            "Photoshop",
+            "After Effects"
+        ],
+        timeframe: [
+            "First rough sketch created in Summer 2013",
+            "Final product presented in Spring 2015"
+        ],
+        work_type: "Thesis project for the MFA program at the Academy of Art University"
     };
 
     var musicVis = {

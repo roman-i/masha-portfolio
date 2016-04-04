@@ -474,3 +474,17 @@ a, a:hover {
     padding-left: 40px;
     padding-right: 40px;
 }
+
+.work-meta {
+  div {
+    color: $grayColor;
+  }
+  .title {
+    color: #333;
+    padding-top: 20px;
+  }
+}
+
+.work-time, .work-type {
+  max-width: 170px;
+}
