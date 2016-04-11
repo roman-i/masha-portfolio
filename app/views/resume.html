@@ -1,0 +1,34 @@
+<div class="resume">
+    <div class="row">
+        <div class="resume-title col-md-12">
+            Resume
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12 work-position" ng-repeat="work in resume.work">
+            <div class="company">
+                {{work.company}}
+            </div>
+            <div class="position">
+                {{work.position}}
+            </div>
+            <div class="dates">
+                {{work.startDate | date : 'M/yyyy'}} - {{work.endDate | date : 'M/yyyy'}}
+            </div>
+        </div>
+        <div class="col-md-12 work-position" ng-repeat="education in resume.education">
+            <div class="company">
+                {{education.institution}}
+            </div>
+            <div class="position">
+                {{education.area}}
+            </div>
+            <div class="dates">
+                {{education.startDate | date : 'M/yyyy'}} - {{education.endDate | date : 'M/yyyy'}}
+            </div>
+        </div>
+    </div>
+    <div class="resume-download">
+        <a href="/Mariya_Yukhimenko.pdf" download>download resume</a>
+    </div>
+</div>

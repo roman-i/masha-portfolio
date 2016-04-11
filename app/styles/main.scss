@@ -488,3 +488,30 @@ a, a:hover {
 .work-time, .work-type {
   max-width: 170px;
 }
+
+.work-position {
+  margin-bottom: 20px;
+}
+
+.resume-title {
+  margin-bottom: 40px;
+}
+
+.resume {
+  .dates {
+    color: $grayColor;
+  }
+}
+
+.resume-download {
+  display: inline;
+  margin-top: 10px;
+  border-bottom: 1px solid #000;
+  a:hover {
+    text-decoration:none;
+  }
+  a {
+    text-decoration:none;
+  }
+  padding-bottom: 0px;
+}

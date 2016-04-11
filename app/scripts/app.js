@@ -34,6 +34,10 @@ angular
         templateUrl: 'views/about.html',
         controller: 'AboutCtrl'
       })
+      .when('/resume', {
+        templateUrl: 'views/resume.html',
+        controller: 'ResumeCtrl'
+      })
       .when('/work/:workId', {
         templateUrl: 'views/work.html',
         controller: 'WorkCtrl'

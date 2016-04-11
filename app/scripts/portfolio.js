@@ -67,7 +67,18 @@ factory('portfolio', ['$sce', function($sce) {
             {
                 image: 'images/bunny/_blender_icons_for_website_2.png'
             }
-        ]
+        ],
+        tools: [
+            'Blender',
+            'Illustrator',
+            'After Effects',
+            'Photoshop'
+        ],
+        timeframe: [
+            'First rough sketch created in Summer 2013',
+            'Final product presented in Spring 2015'
+        ],
+        work_type: 'Thesis project for the MFA program at the Academy of Art University'
     };
 
     var calendarApp = {
@@ -80,7 +91,17 @@ factory('portfolio', ['$sce', function($sce) {
             {
                 image: 'images/calendar/calendar.gif'
             }
-        ]
+        ],
+        tools: [
+            'Photoshop',
+            'Illustrator',
+            'After Effects',
+            'Sketch'
+        ],
+        timeframe: [
+            'Weekend project'
+        ],
+        work_type: 'Personal project'
     };
 
     // var chewWell = {
@@ -119,7 +140,14 @@ factory('portfolio', ['$sce', function($sce) {
             {
                 image: 'images/viz/food.png'
             }
-        ]
+        ],
+        tools: [
+            'Illustrator'
+        ],
+        timeframe: [
+            '3 weeks from initial drafts to the final pdf version'
+        ],
+        work_type: 'Final project for the data visualisation class in the Academy of Art University'
     };
 
     var mittens = {
@@ -135,7 +163,17 @@ factory('portfolio', ['$sce', function($sce) {
             {
                 image: 'images/mittens/icons_mittens.png'
             }
-        ]
+        ],
+        tools: [
+            'Sketch',
+            'After Effects',
+            'Illustrator',
+            'Photoshop'
+        ],
+        timeframe: [
+            'Weekend project'
+        ],
+        work_type: 'Personal project'  
     };
 
     var tipCalculator = {
@@ -148,7 +186,17 @@ factory('portfolio', ['$sce', function($sce) {
             {
                 image: 'images/tip/tips_web.gif'
             }
-        ]        
+        ],
+        tools: [
+            'Sketch',
+            'Illustrator',
+            'After Effects',
+            'Photoshop'
+        ],
+        timeframe: [
+            'Weekend project in collaboration with ios engineer'
+        ],
+        work_type: 'Personal project'     
     };
 
     var gasStation = {
@@ -161,7 +209,17 @@ factory('portfolio', ['$sce', function($sce) {
             {
                 image: 'images/gas/gas_web.gif'
             }
-        ]          
+        ],
+        tools: [
+            'Sketch',
+            'After Effects',
+            'Illustrator',
+            'Photoshop'
+        ],
+        timeframe: [
+            '1 month'
+        ],
+        work_type: 'A client project'     
     };
 
     var bankApp = {
@@ -176,16 +234,15 @@ factory('portfolio', ['$sce', function($sce) {
             }
         ],
         tools: [
-            "Blender",
-            "Illustrator",
-            "Photoshop",
-            "After Effects"
+            'Sketch',
+            'After Effects',
+            'Illustrator',
+            'Photoshop'
         ],
         timeframe: [
-            "First rough sketch created in Summer 2013",
-            "Final product presented in Spring 2015"
+            '1 week from initial sketches to production'
         ],
-        work_type: "Thesis project for the MFA program at the Academy of Art University"
+        work_type: 'Experimental work for a client'
     };
 
     var musicVis = {
@@ -198,7 +255,18 @@ factory('portfolio', ['$sce', function($sce) {
             {
                 image: 'images/viz/music.png'
             }
-        ]
+        ],
+        tools: [
+            'D3',
+            'JavaScript',
+            'CSS3',
+            'HTML5',
+            'Illustrator'
+        ],
+        timeframe: [
+            '3 weeks from initial drafts to the final web version'
+        ],
+        work_type: 'Final project for the data visualisation class in the Academy of Art University'   
     };
 
     // var hyperLoop = {
@@ -218,13 +286,21 @@ factory('portfolio', ['$sce', function($sce) {
         title: '8-bit beard men',
         id: '8-bit-beard-men',
         image: 'images/thumbs/pixels.png',
-        description: $sce.trustAsHtml('Once I tried to create an illustration in 8bit style I become obsessed. It was a fun project for me to create beard men in different clothing. You can find here superheroes and characters from daily life. Click <a target="_blank" href="https://society6.com/mariyayukhimenko">here</a> to purchase it on society6. *More works are available upon request.'),
+        description: $sce.trustAsHtml('Once I tried to create an illustration in 8bit style I become obsessed. It was a fun project for me to create beard men in different clothing. You can find here superheroes and characters from daily life. Click <a target="_blank" href="https://society6.com/mariyayukhimenko">here</a> to purchase it on society6.'),
         groups: [ILLUSTRATION],
         attachments: [
             {
                 image: 'images/pixel/pixel_big.png'
             }
-        ]
+        ],
+        tools: [
+            'Photoshop',
+            'Illustrator'
+        ],
+        timeframe: [
+            '1 week (several characters every day)'
+        ],
+        work_type: 'Personal project'
     };
 
     var musicApp = {
@@ -237,7 +313,14 @@ factory('portfolio', ['$sce', function($sce) {
             {
                 image: 'images/music-app/music_web.png'
             }
-        ]
+        ],
+        tools: [
+            'Sketch'
+        ],
+        timeframe: [
+            'Weekend project'
+        ],
+        work_type: 'Personal project'
     };
 
     // var origami = {
