@@ -312,6 +312,9 @@ span.line_wrap:hover span.line {
     letter-spacing: 2pt;
     font-size: 12px;
   }
+  .black {
+    color: black;
+  }
   position: absolute;
   left: 0;
   top: 71pt;
@@ -498,8 +501,22 @@ a, a:hover {
 }
 
 .resume {
+  position: relative;
   .dates {
     color: $grayColor;
+  }
+  i {
+    color: black;
+    font-size: 14pt;
+  }
+  .red-circle {
+    position: absolute;
+    left: -20px;
+    top: -50px;
+    .ion-record {
+      color: red;
+      font-size: 5pt;
+    }
   }
 }
 
@@ -514,4 +531,32 @@ a, a:hover {
     text-decoration:none;
   }
   padding-bottom: 0px;
+}
+
+.resume-link {
+    -ms-transform: rotate(270deg); /* IE 9 */
+    -webkit-transform: rotate(270deg); /* Chrome, Safari, Opera */
+    transform: rotate(270deg);
+    position: absolute;
+    left: -60px;
+    top: 35px;
+    a {
+      color: $grayColor;
+      text-decoration: none;
+      &:hover {
+        text-decoration: none;
+      }
+      font-variant: small-caps;
+      letter-spacing: 1.5pt;
+    }
+    color: $grayColor;
+
+
+    span.line_wrap:hover span.line {
+      border-top:2px solid $redColor;
+    }
+
+    span.line_wrap span.line {
+      border-top:2px solid $grayColor;
+    }
 }
