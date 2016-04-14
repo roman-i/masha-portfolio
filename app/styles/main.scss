@@ -295,12 +295,14 @@ span.line_wrap:hover span.line {
 
 .about-me {
   > span {
-    letter-spacing: 2.1pt;
+    letter-spacing: 2pt;
+    font-size: 12px;
   }
+  color: $grayColor;
   position: relative;
   padding-top: 65pt;
   padding-bottom: 20px;
-  text-align: center;
+  text-align: right;
   height: 170pt;
   font-size: 11pt;
 }
@@ -314,6 +316,9 @@ span.line_wrap:hover span.line {
   }
   .black {
     color: black;
+  }
+  .name {
+    margin-bottom: 5px;
   }
   position: absolute;
   left: 0;
@@ -494,7 +499,15 @@ a, a:hover {
 
 .work-position {
   margin-bottom: 20px;
+
+  .company {
+    font-size: 14pt;
+    font-variant: small-caps;
+    letter-spacing: 1pt;
+  }
 }
+
+
 
 .resume-title {
   margin-bottom: 40px;

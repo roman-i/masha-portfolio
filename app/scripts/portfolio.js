@@ -90,6 +90,9 @@ factory('portfolio', ['$sce', function($sce) {
         attachments: [
             {
                 image: 'images/calendar/calendar.gif'
+            },
+            {
+                image: 'images/calendar/calendar_app_2.png'
             }
         ],
         tools: [
@@ -208,6 +211,9 @@ factory('portfolio', ['$sce', function($sce) {
         attachments: [
             {
                 image: 'images/gas/gas_web.gif'
+            },
+            {
+                image: 'images/gas/gas_station.png'
             }
         ],
         tools: [
@@ -312,6 +318,9 @@ factory('portfolio', ['$sce', function($sce) {
         attachments: [
             {
                 image: 'images/music-app/music_web.png'
+            },
+            {
+                image: 'images/music-app/music_app_2.png'
             }
         ],
         tools: [

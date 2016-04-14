@@ -27,28 +27,28 @@ angular
       }]
     },
     "work": [{
-      "company": "KIMKIM",
+      "company": "kimkim",
       "position": "UI / UX designer",
       "website": "http://www.kimkim.com/",
       "startDate": "2016-02-01",
       "endDate": "2016-03-01",
       "summary": "working on multiple projects as UX and UI designer"
     },{
-      "company": "Y MEDIA LABS",
+      "company": "y media labs",
       "position": "UI / UX designer",
       "website": "http://www.ymedialabs.com/",
       "startDate": "2015-06-01",
       "endDate": "2016-02-01",
       "summary": "working on multiple projects as UX and UI designer"
     },{
-      "company": "MIXBIT.COM",
+      "company": "mixbit.com",
       "position": "motion graphic intern",
       "website": "http://mixbit.com/",
       "startDate": "2014-06-01",
       "endDate": "2014-08-01",
       "summary": "worked on two motion graphic themes: birthday and shimmer (creating and editing in After Effects)"
     },{
-      "company": "STOHKE.COM",
+      "company": "stohke.com",
       "position": "design Intern",
       "website": "http://STOHKE.COM/",
       "startDate": "2014-04-01",
@@ -56,7 +56,7 @@ angular
       "summary": "developed ux design for the website and its mobile version, created mockups, graphics and ui elements"
     }],
     "education": [{
-      "institution": "ACADEMY OF ART UNIVERSITY",
+      "institution": "academy of art university",
       "area": "MFA at Web Design",
       "studyType": "Bachelor",
       "startDate": "2012-06-01",
