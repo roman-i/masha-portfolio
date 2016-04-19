@@ -1,7 +1,5 @@
 'use strict';
 
-/*global $ */
-
 /**
  * @ngdoc function
  * @name mashaPortfolioAngularApp.controller:MainCtrl
@@ -12,16 +10,27 @@
 angular.module('mashaPortfolioAngularApp')
   .controller('MainCtrl', ['$scope', '$timeout', 'portfolio', '$routeParams', '$location', '$route', function ($scope, $timeout, portfolio, $routeParams, $location, $route) {
 
-    var $grid = $('#grid');  
+    // var $grid = $('#grid');  
 
-    $scope.portfolio = portfolio;
+    portfolio.then(function(portfolioJson) {
 
-    // function shuffleAndUpdateGroup() {
-    //     var group = $route.current.params.groupId || 'all';
-    //     $scope.group = group;
-    //     $grid.shuffle('shuffle', $scope.group);
-    //     $rootScope.lastGroup = group;
-    // }
+      $scope.portfolio = portfolioJson;
+
+      // function shuffleAndUpdateGroup() {
+      //     var group = $route.current.params.groupId || 'all';
+      //     $scope.group = group;
+      //     $grid.shuffle('shuffle', $scope.group);
+      //     $rootScope.lastGroup = group;
+      // }
+
+      // debugger;
+      // var $sizer = $grid.find('.shuffle__sizer');
+      // $grid.shuffle({
+      //     itemSelector: '.picture-item',
+      //     sizer: $sizer
+      // });
+
+    });
 
     var lastRoute = $route.current;
     $scope.$on('$locationChangeSuccess', function() {
@@ -33,12 +42,13 @@ angular.module('mashaPortfolioAngularApp')
     });
 
     $scope.onRender = function() {
-      var $sizer = $grid.find('.shuffle__sizer');
-      $grid.shuffle({
-          itemSelector: '.picture-item',
-          sizer: $sizer
-      });
+      // var $sizer = $grid.find('.shuffle__sizer');
+      // $grid.shuffle({
+      //     itemSelector: '.picture-item',
+      //     sizer: $sizer
+      // });
     };
+
   }])
 .directive('postRender', [ '$timeout', function($timeout) {
 var def = {
